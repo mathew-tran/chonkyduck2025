@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SpeakerData" load_steps=3 format=3 uid="uid://q0pbi8vjmhuq"]
+
+[ext_resource type="Texture2D" uid="uid://b1xfegtp5u3vk" path="res://Art/Characters/ChonkyDuck/ChonkyDuckIdle.png" id="1_7yqoe"]
+[ext_resource type="Script" uid="uid://cksqek8ep10yn" path="res://Content/SpeakerData.gd" id="1_yiv35"]
+
+[resource]
+script = ExtResource("1_yiv35")
+SpeakerName = "Chonky Duck"
+SpeakerImage = ExtResource("1_7yqoe")
+metadata/_custom_type_script = "uid://cksqek8ep10yn"

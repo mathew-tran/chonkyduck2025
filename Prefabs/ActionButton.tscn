@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbhq13ra7kjfq"]
+
+[ext_resource type="Texture2D" uid="uid://grqyt7rale3k" path="res://Art/UI/DialogueChoice.png" id="1_nsb06"]
+[ext_resource type="Texture2D" uid="uid://1nnwfs883vna" path="res://Art/UI/DialogueChoiceHover.png" id="2_sip1o"]
+[ext_resource type="Script" uid="uid://b4ejcutryqcn6" path="res://Scripts/ActionButton.gd" id="3_sip1o"]
+
+[node name="TextureButton" type="TextureButton"]
+texture_normal = ExtResource("1_nsb06")
+texture_pressed = ExtResource("2_sip1o")
+texture_hover = ExtResource("2_sip1o")
+stretch_mode = 3
+script = ExtResource("3_sip1o")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 80
+text = "asdasd"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="button_up" from="." to="." method="_on_button_up"]
