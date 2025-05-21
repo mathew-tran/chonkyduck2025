@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://cnj6s1cks3ql0"]
+
+[ext_resource type="Texture2D" uid="uid://bxcl8ri5abn0d" path="res://Art/UI/DialogueBo.png" id="1_r150o"]
+[ext_resource type="Texture2D" uid="uid://b1xfegtp5u3vk" path="res://Art/Characters/ChonkyDuck/ChonkyDuckIdle.png" id="2_idj7w"]
+[ext_resource type="Texture2D" uid="uid://dmdou6d66gdmw" path="res://Art/Characters/SecurityLead/SecurityLeadIdle.png" id="2_kln2b"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 12.0
+offset_top = 421.0
+offset_right = 412.0
+offset_bottom = 822.0
+texture = ExtResource("2_idj7w")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 1470.0
+offset_top = 237.0
+offset_right = 1911.0
+offset_bottom = 777.0
+texture = ExtResource("2_kln2b")
+
+[node name="Control" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -950.0
+offset_top = -289.0
+offset_right = 950.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("1_r150o")
