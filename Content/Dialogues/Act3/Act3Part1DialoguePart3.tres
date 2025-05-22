@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://de7n3lo6lluyf"]
+
+[ext_resource type="Texture2D" uid="uid://bm4hvxcgsmxja" path="res://Art/Backgrounds/MuseumDiamondBack.png" id="1_6xq7c"]
+[ext_resource type="Resource" uid="uid://brwcsdib5kwwk" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart3a.tres" id="1_8eyvk"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_3e2m1"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="2_s21o7"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="2_slhmw"]
+[ext_resource type="Resource" uid="uid://bha1kyquux5j1" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart3b.tres" id="3_3e2m1"]
+
+[sub_resource type="Resource" id="Resource_kgpaa"]
+script = ExtResource("2_3e2m1")
+ActionName = "No"
+DialogueRef = ExtResource("1_8eyvk")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_0dpxf"]
+script = ExtResource("2_3e2m1")
+ActionName = "Yes"
+DialogueRef = ExtResource("3_3e2m1")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("2_s21o7")
+bIsPlayer = false
+SpeakerRef = ExtResource("2_slhmw")
+EmoteState = 0
+DialogueToSay = "Hey you!
+..
+..
+Not planning to steal this diamond are you?"
+Background = ExtResource("1_6xq7c")
+Action1 = SubResource("Resource_kgpaa")
+Action2 = SubResource("Resource_0dpxf")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

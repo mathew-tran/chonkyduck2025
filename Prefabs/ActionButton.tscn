@@ -5,6 +5,21 @@
 [ext_resource type="Texture2D" uid="uid://xijxvgmk26tx" path="res://Art/UI/DialogueChoiceDisabled.png" id="3_6vcse"]
 [ext_resource type="Script" uid="uid://b4ejcutryqcn6" path="res://Scripts/ActionButton.gd" id="3_sip1o"]
 
+[sub_resource type="Animation" id="Animation_6vcse"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
 [sub_resource type="Animation" id="Animation_sip1o"]
 resource_name = "anim"
 length = 0.4
@@ -19,21 +34,6 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector2(1, 0), Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_6vcse"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ikpys"]

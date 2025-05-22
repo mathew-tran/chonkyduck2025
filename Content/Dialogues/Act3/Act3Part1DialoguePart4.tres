@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://lsmofgmncd7w"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_qdvtc"]
+[ext_resource type="Resource" uid="uid://8ctj6biotvr7" path="res://Content/Dialogues/Act4/Act4Part1DialoguePart1.tres" id="1_xq58u"]
+[ext_resource type="Texture2D" uid="uid://bm4hvxcgsmxja" path="res://Art/Backgrounds/MuseumDiamondBack.png" id="2_3kaae"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_i03fb"]
+
+[sub_resource type="Resource" id="Resource_kgpaa"]
+script = ExtResource("1_qdvtc")
+ActionName = "..."
+DialogueRef = ExtResource("1_xq58u")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_i03fb")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "The guard walks away.
+Then another one pops again, right behind you."
+Background = ExtResource("2_3kaae")
+Action1 = SubResource("Resource_kgpaa")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

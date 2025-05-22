@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://8ctj6biotvr7"]
+
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_4dgyi"]
+[ext_resource type="Resource" uid="uid://dvscftce1ounh" path="res://Content/Dialogues/Act4/Act4Part1DialoguePart2.tres" id="1_aqb20"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_bpkyu"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="3_bpkyu"]
+[ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="3_so844"]
+
+[sub_resource type="Resource" id="Resource_v3u73"]
+script = ExtResource("2_bpkyu")
+ActionName = "Sure does"
+DialogueRef = ExtResource("1_aqb20")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_4dgyi")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_so844")
+EmoteState = 0
+DialogueToSay = "Hey man.
+Don't sweat my boss. He's been under alot of pressure.
+He just wants to keep up security and ensure nothing goes wrong haha.
+So.. how do you like exhibit? The diamond looks nice, doesn't it?"
+Background = ExtResource("3_bpkyu")
+Action1 = SubResource("Resource_v3u73")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

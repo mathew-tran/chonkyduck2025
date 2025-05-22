@@ -1,10 +1,14 @@
-[gd_resource type="Resource" script_class="SpeakerData" load_steps=3 format=3 uid="uid://dbt11g8s0vpbl"]
+[gd_resource type="Resource" script_class="SpeakerData" load_steps=5 format=3 uid="uid://dbt11g8s0vpbl"]
 
-[ext_resource type="Texture2D" uid="uid://dmdou6d66gdmw" path="res://Art/Characters/SecurityLead/SecurityLeadIdle.png" id="1_vsvbe"]
-[ext_resource type="Script" uid="uid://cksqek8ep10yn" path="res://Content/SpeakerData.gd" id="2_aqlwo"]
+[ext_resource type="Texture2D" uid="uid://dmdou6d66gdmw" path="res://Art/Characters/SecurityLead/SecurityLeadIdle.png" id="1_jjn63"]
+[ext_resource type="Texture2D" uid="uid://6xamk5fo442h" path="res://Art/Characters/SecurityLead/SecurityLeadAngry.png" id="1_vapqd"]
+[ext_resource type="Texture2D" uid="uid://cbq1p4py7nixg" path="res://Art/Characters/SecurityLead/SecurityLeadSurprised.png" id="2_vapqd"]
+[ext_resource type="Script" uid="uid://cksqek8ep10yn" path="res://Content/SpeakerData.gd" id="3_3mduj"]
 
 [resource]
-script = ExtResource("2_aqlwo")
+script = ExtResource("3_3mduj")
 SpeakerName = "Lead Security"
-SpeakerImage = ExtResource("1_vsvbe")
+SpeakerImage = ExtResource("1_jjn63")
+SpeakerSurprised = ExtResource("2_vapqd")
+SpeakerAngry = ExtResource("1_vapqd")
 metadata/_custom_type_script = "uid://cksqek8ep10yn"

@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://2v17apudbhjb"]
+
+[ext_resource type="Resource" uid="uid://csk5tgd0oc00e" path="res://Content/Dialogues/Act4/Act4Part1DialoguePart4.tres" id="1_4mknr"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_v6pk3"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="2_4mknr"]
+[ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="3_yj7lm"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_tvkar"]
+
+[sub_resource type="Resource" id="Resource_upuxr"]
+script = ExtResource("1_v6pk3")
+ActionName = "Turns out I might know someone"
+DialogueRef = ExtResource("1_4mknr")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_tvkar")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_yj7lm")
+EmoteState = 1
+DialogueToSay = "Could be? 
+Haha. Everyone on the fence these days. 
+Well. I am too.
+All these artifacts, they have had to belong to someone before right?
+Well if I had anything to say. I would probably want to return artifacts to their rightful owners.
+If someone could convince me if this is the case. I would see if I can talk to my higher ups!"
+Background = ExtResource("2_4mknr")
+Action1 = SubResource("Resource_upuxr")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

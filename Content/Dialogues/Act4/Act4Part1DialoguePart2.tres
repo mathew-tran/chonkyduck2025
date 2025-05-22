@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://dvscftce1ounh"]
+
+[ext_resource type="Resource" uid="uid://2v17apudbhjb" path="res://Content/Dialogues/Act4/Act4Part1DialoguePart3.tres" id="1_bstvr"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_douoj"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="2_bstvr"]
+[ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="3_t2dm3"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_ng2bl"]
+
+[sub_resource type="Resource" id="Resource_upuxr"]
+script = ExtResource("1_douoj")
+ActionName = "Could be"
+DialogueRef = ExtResource("1_bstvr")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_ng2bl")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_t2dm3")
+EmoteState = 0
+DialogueToSay = "Don't tell anyone, but I heard someone saying that the gem on display here is stolen goods.
+I don't know what to believe nowadays.
+Do you think it's stolen goods?"
+Background = ExtResource("2_bstvr")
+Action1 = SubResource("Resource_upuxr")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

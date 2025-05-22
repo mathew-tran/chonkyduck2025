@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://c5ioyl5n8fdpr"]
+
+[ext_resource type="Texture2D" uid="uid://bm4hvxcgsmxja" path="res://Art/Backgrounds/MuseumDiamondBack.png" id="1_btnih"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_fk0xm"]
+[ext_resource type="Resource" uid="uid://de7n3lo6lluyf" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart3.tres" id="1_qxm12"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="2_qtecf"]
+[ext_resource type="Texture2D" uid="uid://dmdou6d66gdmw" path="res://Art/Characters/SecurityLead/SecurityLeadIdle.png" id="3_qxm12"]
+
+[sub_resource type="Resource" id="Resource_r71i6"]
+script = ExtResource("1_fk0xm")
+ActionName = "Talk to him"
+DialogueRef = ExtResource("1_qxm12")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("2_qtecf")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack turns around..
+Then suddenly a person appears right in front of him."
+Background = ExtResource("1_btnih")
+ObjectOfInterest = ExtResource("3_qxm12")
+Action1 = SubResource("Resource_r71i6")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

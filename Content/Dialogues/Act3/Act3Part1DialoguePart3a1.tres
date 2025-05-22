@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://d1viulv6lv6ul"]
+
+[ext_resource type="Resource" uid="uid://lsmofgmncd7w" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart4.tres" id="1_3kaae"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_qdvtc"]
+[ext_resource type="Texture2D" uid="uid://bm4hvxcgsmxja" path="res://Art/Backgrounds/MuseumDiamondBack.png" id="2_3kaae"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_i03fb"]
+
+[sub_resource type="Resource" id="Resource_kgpaa"]
+script = ExtResource("1_qdvtc")
+ActionName = "..."
+DialogueRef = ExtResource("1_3kaae")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_i03fb")
+bIsPlayer = true
+EmoteState = 1
+DialogueToSay = "Can he say that?"
+Background = ExtResource("2_3kaae")
+Action1 = SubResource("Resource_kgpaa")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

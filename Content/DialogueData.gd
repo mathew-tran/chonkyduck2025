@@ -4,6 +4,7 @@ class_name DialogueData
 
 @export var bIsPlayer = false
 @export var SpeakerRef : SpeakerData
+@export var EmoteState = SpeakerData.EMOTE_STATE.IDLE
 @export_multiline var DialogueToSay = ""
 
 @export var Background : Texture2D

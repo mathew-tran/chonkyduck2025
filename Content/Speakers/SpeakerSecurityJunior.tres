@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="SpeakerData" load_steps=5 format=3 uid="uid://boum1gjjvdm0e"]
+
+[ext_resource type="Texture2D" uid="uid://cvt57uthf8t8w" path="res://Art/Characters/SecurityJunior/SecurityJuniorAngry.png" id="1_j08t3"]
+[ext_resource type="Texture2D" uid="uid://h8mgw68aq0kb" path="res://Art/Characters/SecurityJunior/SecurityJuniorIdle.png" id="2_mvahb"]
+[ext_resource type="Texture2D" uid="uid://b4uxidtp37llh" path="res://Art/Characters/SecurityJunior/SecurityJuniorSurprised.png" id="3_51khe"]
+[ext_resource type="Script" uid="uid://cksqek8ep10yn" path="res://Content/SpeakerData.gd" id="4_shf3l"]
+
+[resource]
+script = ExtResource("4_shf3l")
+SpeakerName = "Junior Security"
+SpeakerImage = ExtResource("2_mvahb")
+SpeakerSurprised = ExtResource("3_51khe")
+SpeakerAngry = ExtResource("1_j08t3")
+metadata/_custom_type_script = "uid://cksqek8ep10yn"

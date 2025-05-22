@@ -20,12 +20,14 @@ var ActionButtonClass = load("res://Prefabs/ActionButton.tscn")
 
 var InPosition = Vector2.ZERO
 
+@export var StartingDialogue : DialogueData
 func _enter_tree() -> void:
 	$CoverPanel.visible = true
 func _ready() -> void:
 	InPosition = $CoverPanel.global_position
 	print(len($Label.text))
-	InjectDialogue(load("res://Content/Dialogues/Act1/Act1Part1DialoguePart1.tres"))
+	await AnimateOut()
+	InjectDialogue(StartingDialogue)
 	
 func AnimateOut():	
 	var tween = get_tree().create_tween()
@@ -55,6 +57,7 @@ func AnimateObjectOfInterest(bShow):
 		tween.tween_property($ObjectOfInterest, "modulate", Color(0,0,0,0), .1)
 		
 	await tween.finished
+	
 func InjectDialogue(dialogue : DialogueData):
 	CurrentState = STATE.ANIMATING
 	if dialogue.bAnimate:
@@ -74,7 +77,7 @@ func InjectDialogue(dialogue : DialogueData):
 	$RightOwner.visible = false
 	
 	if dialogue.bIsPlayer:
-		$LeftPortrait.texture = dialogue.GetSpeakerRef().SpeakerImage
+		$LeftPortrait.texture = dialogue.GetSpeakerRef().GetImage(dialogue.EmoteState)
 		$LeftOwner.text = dialogue.GetSpeakerRef().SpeakerName
 		await $LeftPortrait.Show()
 		await $RightPortrait.Hide()
@@ -82,7 +85,7 @@ func InjectDialogue(dialogue : DialogueData):
 		$LeftOwner.visible = true
 	else:
 		if dialogue.SpeakerRef:
-			$RightPortrait.texture = dialogue.GetSpeakerRef().SpeakerImage
+			$RightPortrait.texture = dialogue.GetSpeakerRef().GetImage(dialogue.EmoteState)
 			$RightOwner.text = dialogue.GetSpeakerRef().SpeakerName
 			await $RightPortrait.Show()
 			await $LeftPortrait.Hide()

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://brwcsdib5kwwk"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_efl5n"]
+[ext_resource type="Resource" uid="uid://d1viulv6lv6ul" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart3a1.tres" id="1_tcet2"]
+[ext_resource type="Texture2D" uid="uid://bm4hvxcgsmxja" path="res://Art/Backgrounds/MuseumDiamondBack.png" id="2_tcet2"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="3_iqjil"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_j2rpj"]
+
+[sub_resource type="Resource" id="Resource_kgpaa"]
+script = ExtResource("1_efl5n")
+ActionName = "..."
+DialogueRef = ExtResource("1_tcet2")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_j2rpj")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_iqjil")
+EmoteState = 0
+DialogueToSay = "Good.
+Carry on, but be warned, if you try anything funny. I'll be sure to put you in jail for the rest of your life. "
+Background = ExtResource("2_tcet2")
+Action1 = SubResource("Resource_kgpaa")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

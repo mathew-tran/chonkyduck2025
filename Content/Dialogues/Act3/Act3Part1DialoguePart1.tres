@@ -1,13 +1,23 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=3 format=3 uid="uid://2pxefsuiu0gc"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://2pxefsuiu0gc"]
 
 [ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_4kkto"]
 [ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="1_737dn"]
+[ext_resource type="Resource" uid="uid://c5ioyl5n8fdpr" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart2.tres" id="1_yco8s"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_f0su1"]
+
+[sub_resource type="Resource" id="Resource_y8c73"]
+script = ExtResource("2_f0su1")
+ActionName = "Look Around"
+DialogueRef = ExtResource("1_yco8s")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("1_4kkto")
 bIsPlayer = false
+EmoteState = 0
 DialogueToSay = "Jack Feathers enters the exhibit and sees the diamond across from him.
 Jack notices a bunch of cameras watching it intently."
 Background = ExtResource("1_737dn")
+Action1 = SubResource("Resource_y8c73")
 bAnimate = true
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"
