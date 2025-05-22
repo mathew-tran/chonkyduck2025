@@ -14,6 +14,8 @@ class_name DialogueData
 @export var Action3 : ActionData
 @export var Action4 : ActionData
 
+@export var bAnimate = false
+
 func GetSpeakerRef():
 	if bIsPlayer:
 		return load("res://Content/Speakers/SpeakerDuck.tres")

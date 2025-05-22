@@ -9,4 +9,5 @@ bIsPlayer = false
 DialogueToSay = "Jack Feathers enters the exhibit and sees the diamond across from him.
 Jack notices a bunch of cameras watching it intently."
 Background = ExtResource("1_737dn")
+bAnimate = true
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

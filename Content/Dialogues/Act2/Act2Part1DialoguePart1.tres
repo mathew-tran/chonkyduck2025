@@ -19,4 +19,5 @@ Jack Feathers enters the Robertsonian National Museum of History.
 He sees a clerk at the desk and moves forward."
 Background = ExtResource("1_v1oo3")
 Action1 = SubResource("Resource_yvgy7")
+bAnimate = true
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

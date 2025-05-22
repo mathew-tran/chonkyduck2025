@@ -19,4 +19,5 @@ Jack Feathers comes back to his home.
 He notices a mail in the mailbox"
 Background = ExtResource("3_fs658")
 Action1 = SubResource("Resource_2u8nd")
+bAnimate = true
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

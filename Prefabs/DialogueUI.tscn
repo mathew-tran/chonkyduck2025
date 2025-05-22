@@ -1,11 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://dch1prjihqcvg"]
 
-[ext_resource type="Texture2D" uid="uid://b1xfegtp5u3vk" path="res://Art/Characters/ChonkyDuck/ChonkyDuckIdle.png" id="1_g1g66"]
 [ext_resource type="Script" uid="uid://b7os0s3jqls0q" path="res://Scripts/DialogueUI.gd" id="1_rrf6a"]
 [ext_resource type="Texture2D" uid="uid://34hceqcyprr8" path="res://Art/Items/Files.png" id="2_opq0f"]
-[ext_resource type="Texture2D" uid="uid://dmdou6d66gdmw" path="res://Art/Characters/SecurityLead/SecurityLeadIdle.png" id="2_rrf6a"]
+[ext_resource type="PackedScene" uid="uid://be8a5htekf0tm" path="res://Prefabs/CharacterPortrait.tscn" id="3_lwf1i"]
 [ext_resource type="Texture2D" uid="uid://bxcl8ri5abn0d" path="res://Art/UI/DialogueBo.png" id="3_opq0f"]
-[ext_resource type="Texture2D" uid="uid://b4pqt0f4siswm" path="res://Art/UI/DialogueContinueArrow.png" id="6_opq0f"]
+[ext_resource type="PackedScene" uid="uid://c2hbernhscs83" path="res://Prefabs/ContinueArrow.tscn" id="6_opq0f"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrf6a"]
 content_margin_left = 10.0
@@ -15,6 +14,9 @@ content_margin_bottom = 10.0
 bg_color = Color(0.0470588, 0.0509804, 0.0627451, 1)
 expand_margin_left = 2.0
 expand_margin_top = 2.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_opq0f"]
+bg_color = Color(0, 0, 0.0862745, 1)
 
 [node name="Dialogue" type="Control" groups=["DialogueUI"]]
 layout_mode = 3
@@ -30,6 +32,15 @@ custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
+
+[node name="ObjectOfinterestPanel" type="Panel" parent="."]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="ObjectOfInterest" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(200, 200)
@@ -49,21 +60,20 @@ texture = ExtResource("2_opq0f")
 expand_mode = 4
 stretch_mode = 5
 
-[node name="LeftPortrait" type="TextureRect" parent="."]
+[node name="LeftPortrait" parent="." instance=ExtResource("3_lwf1i")]
 layout_mode = 0
-offset_left = -4.0
-offset_top = 341.0
-offset_right = 396.0
-offset_bottom = 742.0
-texture = ExtResource("1_g1g66")
+offset_left = 6.0
+offset_top = 354.0
+offset_right = 406.0
+offset_bottom = 755.0
 
-[node name="RightPortrait" type="TextureRect" parent="."]
+[node name="RightPortrait" parent="." instance=ExtResource("3_lwf1i")]
 layout_mode = 0
-offset_left = 1495.0
-offset_top = 172.0
-offset_right = 1936.0
-offset_bottom = 712.0
-texture = ExtResource("2_rrf6a")
+offset_left = 1511.0
+offset_top = 352.0
+offset_right = 1911.0
+offset_bottom = 753.0
+flip_h = true
 
 [node name="DialogueBox" type="TextureRect" parent="."]
 modulate = Color(1, 1, 1, 0.85098)
@@ -92,15 +102,15 @@ theme_override_font_sizes/font_size = 80
 text = "1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 12345678"
 autowrap_mode = 2
 
-[node name="ContinueArrow" type="TextureRect" parent="."]
+[node name="ContinueArrow" parent="." instance=ExtResource("6_opq0f")]
 layout_mode = 0
-offset_left = 1847.0
-offset_top = 1022.0
-offset_right = 1897.0
-offset_bottom = 1060.0
-texture = ExtResource("6_opq0f")
+offset_left = 1852.0
+offset_top = 1019.0
+offset_right = 1902.0
+offset_bottom = 1057.0
 
 [node name="Actions" type="VBoxContainer" parent="."]
+custom_minimum_size = Vector2(1925, 495)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -125,10 +135,10 @@ vertical_alignment = 1
 [node name="RightOwner" type="Label" parent="."]
 custom_minimum_size = Vector2(300, 150)
 layout_mode = 0
-offset_left = 1570.0
-offset_top = 646.0
-offset_right = 1870.0
-offset_bottom = 796.0
+offset_left = 1567.0
+offset_top = 643.0
+offset_right = 1867.0
+offset_bottom = 793.0
 theme_override_font_sizes/font_size = 40
 theme_override_styles/normal = SubResource("StyleBoxFlat_rrf6a")
 text = "Olivia 
@@ -137,3 +147,12 @@ horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
 text_direction = 1
+
+[node name="CoverPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_opq0f")
