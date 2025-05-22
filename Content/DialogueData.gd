@@ -4,7 +4,10 @@ class_name DialogueData
 
 @export var bIsPlayer = false
 @export var SpeakerRef : SpeakerData
-@export var DialogueToSay = ""
+@export_multiline var DialogueToSay = ""
+
+@export var Background : Texture2D
+@export var ObjectOfInterest : Texture2D
 
 @export var Action1 : ActionData
 @export var Action2 : ActionData

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SpeakerData" load_steps=3 format=3 uid="uid://bftlgdtjcykj"]
+
+[ext_resource type="Texture2D" uid="uid://y2t7vnfmktt" path="res://Art/Characters/Olivia/OliviaIdle.png" id="1_cufj6"]
+[ext_resource type="Script" uid="uid://cksqek8ep10yn" path="res://Content/SpeakerData.gd" id="2_h3u11"]
+
+[resource]
+script = ExtResource("2_h3u11")
+SpeakerName = "Olivia (Receptionist)"
+SpeakerImage = ExtResource("1_cufj6")
+metadata/_custom_type_script = "uid://cksqek8ep10yn"

@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://b44f5y0u5qkf4"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_md1we"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="2_qnsjq"]
+[ext_resource type="Resource" uid="uid://bftlgdtjcykj" path="res://Content/Speakers/SpeakerOlivia.tres" id="3_jlaih"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_18wr6"]
+
+[sub_resource type="Resource" id="Resource_yvgy7"]
+script = ExtResource("1_md1we")
+ActionName = "Name"
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_18wr6")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_jlaih")
+DialogueToSay = "Ah, yes. So the diamond seems to have been donated by a local philanthropist.
+He does not wish to be named. And we have lost contact with him some time ago.
+Other than that. Things to know, things to know..
+Oh! So the diamond weighs in about 1.6 pounds and is said to be more valuable than the Cullinan I Diamond.
+For context the Cullinan I Diamond costs about 150 million dollars! And was said to be given to Edward VII of England.
+I speak alot of the Cullinan I Diamond, but I actually don't know much of the origin of \"Eternal Youth\", it has been rated and confirmed by a gemologist to be of great value.
+Anyways. I speak too much. You should see it for yourself.
+Have a great day!"
+Background = ExtResource("2_qnsjq")
+Action1 = SubResource("Resource_yvgy7")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

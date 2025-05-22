@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://bkt1g0vxv3qnl"]
+
+[ext_resource type="Resource" uid="uid://b07vytj0lvw4k" path="res://Content/Dialogues/Act1/Act1Part1DialoguePart2GetMail.tres" id="1_wuj17"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_p6gm5"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="3_fs658"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_hjwvv"]
+
+[sub_resource type="Resource" id="Resource_2u8nd"]
+script = ExtResource("2_p6gm5")
+ActionName = "Get Mail"
+DialogueRef = ExtResource("1_wuj17")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_hjwvv")
+bIsPlayer = false
+DialogueToSay = "It is night time now.
+Jack Feathers comes back to his home.
+He notices a mail in the mailbox"
+Background = ExtResource("3_fs658")
+Action1 = SubResource("Resource_2u8nd")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://buptvvg55js2"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_772lg"]
+[ext_resource type="Resource" uid="uid://b6lo503u33486" path="res://Content/Dialogues/Act2/Act2Part1DialoguePart1.tres" id="1_b3ken"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="2_b3ken"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_bsegi"]
+
+[sub_resource type="Resource" id="Resource_2u8nd"]
+script = ExtResource("1_772lg")
+ActionName = "Go to Sleep."
+DialogueRef = ExtResource("1_b3ken")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_bsegi")
+bIsPlayer = true
+DialogueToSay = "Well, I guess I'll be checking out the 
+Robertsonian National Museum of History tommorow.
+This should be easy. Just need to case the place, then do the deed!"
+Background = ExtResource("2_b3ken")
+Action1 = SubResource("Resource_2u8nd")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://c022xta6t7aox"]
+
+[ext_resource type="Resource" uid="uid://buptvvg55js2" path="res://Content/Dialogues/Act1/Act1Part1DialoguePart4Continue.tres" id="1_iyfc0"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_oc5kd"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="2_iyfc0"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_xnieb"]
+
+[sub_resource type="Resource" id="Resource_2u8nd"]
+script = ExtResource("1_oc5kd")
+ActionName = "Finish Reading."
+DialogueRef = ExtResource("1_iyfc0")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_xnieb")
+bIsPlayer = false
+DialogueToSay = "Jack Feathers begins to read the mail.
+A client named Marlon Birdo calls to his aid.
+There is an extremely rare gem called \"Eternal Youth\" that was previously owned by his family and is now on exhibit at the museum.
+Marlon Birdo is asking for Jack Feathers to help him.
+Marlon is providing a large sum of money. To return the gem. So much that Jack can't refuse.
+"
+Background = ExtResource("2_iyfc0")
+Action1 = SubResource("Resource_2u8nd")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

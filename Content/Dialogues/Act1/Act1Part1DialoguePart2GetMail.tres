@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://b07vytj0lvw4k"]
+
+[ext_resource type="Resource" uid="uid://c022xta6t7aox" path="res://Content/Dialogues/Act1/Act1Part1DialoguePart3ReadMail.tres" id="1_gphqd"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_xi4jw"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="2_gphqd"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_nkeoi"]
+[ext_resource type="Texture2D" uid="uid://34hceqcyprr8" path="res://Art/Items/Files.png" id="4_nkeoi"]
+
+[sub_resource type="Resource" id="Resource_2u8nd"]
+script = ExtResource("1_xi4jw")
+ActionName = "Read it."
+DialogueRef = ExtResource("1_gphqd")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_nkeoi")
+bIsPlayer = true
+DialogueToSay = "What's this?"
+Background = ExtResource("2_gphqd")
+ObjectOfInterest = ExtResource("4_nkeoi")
+Action1 = SubResource("Resource_2u8nd")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

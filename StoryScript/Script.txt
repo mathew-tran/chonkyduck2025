@@ -1,0 +1,95 @@
+Marlon Birdo is a client who wants to retrieve his gem back.
+He states that the gem has always been in his family. Then one day the gem disappeared.
+He has photos to prove that he has the gem.
+He has told the museum (allegedly) that the gem belonged to his family, but the museum refused to believe it.
+Marlon Birdo wants to take what rightfully is his, and he employs chonky duck to do it.
+
+Terminology
+Eternal Youth - Pink Diamond - 1.6 pound diamond - Better than Cullinan diamond in every aspect, but it's pink.
+https://brite.co/blog/largest-diamond-in-the-world/#:~:text=The%20largest%20diamond%20in%20history,wide%2C%20and%202.5%20inches%20high.
+$150,046,978 
+
+
+Characters:
+Jack Feathers = Chonky Duck
+Receptionist Olivia = Older receptionist, with glasses. Longish hair and a smile.
+
+Scenes:
+Mailbox next to a house at night
+
+Act I:
+
+[Scene 1, Mail box next to a house at night]
+
+Narrator: Jack Feathers gets the case file from a mysterious client. Marlon Birdo.
+
+He opens the document in the mail, with several pictures showing that the gem was his.
+Marlon asks Jack Feathers to retrieve the gem from the museum, as he is the only one who can do it.
+
+[Scene 2]
+Narrator:
+Jack Feathers then promptly visits the Robertsonian National Museum of History. he begins to case the area, looking around, asking for questions
+
+Jack Feathers is in the main hall of the museum and meets the receptionist.
+
+Receptionist Olivia asks for the entry fee and Jack Feathers gives the money to her.
+
+From here, you can ask Olivia about the following.
+
+====================================
+(A)[Ask her about any recent new exhibits]
+"Yes, there is one new exhibit! It's the "Eternal Youth" - a large pink diamond donated by a mysterious philanthropist! Some say it's worth more than the Cullinan diamond!"
+
+(B)[Ask her what exhibits she would recommend to go to]
+"I would check out our new exhibit, the "Eternal Youth". It's what everyone has been waiting for. You didn't come here to see it?
+====================================
+
+(A/B)
+====>
+[Go to the exhibit]
+"See you around then! I hope you enjoy seeing the "Eternal Youth" I hear lots of people keep claiming that they own it haha. Some people!"
+
+====================================
+[Some people?]
+"Yes, some people think they can claim and own the diamond. There was a few people saying that they had the diamond for generations, showing photos. But we couldn't take them seriously!"
+"Well anyways. I hope you enjoy the exhibit and hope you have a great time!"
+
+
+[Scene 3, view of the diamond]
+Jack enters the rooms
+
+Jacks looks around the area looking for weaknesses in the security.
+He notices a couple he notices a couple cameras.
+
+When he turns around to see more, a guard shows up in front of his face. 
+(This is the elder guard)
+=========
+["???"]
+"Hey you, not looking to steal the "Eternal Youth" are ya? Lots of people have their eyes on it!"
+============
+
+===========================
+["No"]
+"That's good. Carry on then. But be warned, if you try anything funny. You'll be spending the rest of your life in jail"
+
+["Yes"] (FAIL)
+"Funny guy, ah? Well I'll be keeping an eye on you, so don't do anything stupid"
+
+===========================
+
+["Move Along"]
+===>
+We begin to look around and see if we can find anything else.
+
+[Go upstairs]
+"You head upstairs, there seems to be an electrical room in the corner"
+
+[Look around on the current floor]
+
+
+** FOR MATT **
+We want to have some divergence or bad paths, but we also want to make sure player doesn't get an easy game over
+
+
+
+

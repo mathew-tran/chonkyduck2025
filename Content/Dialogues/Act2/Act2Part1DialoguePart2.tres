@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://7ce7h0kv1kfy"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_qe4tg"]
+[ext_resource type="Resource" uid="uid://dptqgrwi6qyb5" path="res://Content/Dialogues/Act2/Act2Part1DialoguePart2a.tres" id="1_yrpvp"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="2_cqjc4"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_81ob6"]
+[ext_resource type="Resource" uid="uid://bftlgdtjcykj" path="res://Content/Speakers/SpeakerOlivia.tres" id="3_cqjc4"]
+[ext_resource type="Resource" uid="uid://b44f5y0u5qkf4" path="res://Content/Dialogues/Act2/Act2Part1DialoguePart2b.tres" id="3_t3232"]
+
+[sub_resource type="Resource" id="Resource_yvgy7"]
+script = ExtResource("1_qe4tg")
+ActionName = "Yes"
+DialogueRef = ExtResource("1_yrpvp")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_bg2sk"]
+script = ExtResource("1_qe4tg")
+ActionName = "Can you tell me more about the diamond?"
+DialogueRef = ExtResource("3_t3232")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_81ob6")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_cqjc4")
+DialogueToSay = "Hello there! Welcome to the Robertsonian National Museum of History!
+Have you come to see this magnificent pink diamond called \"Eternal Youth\"? Everyone has been coming to see it!"
+Background = ExtResource("2_cqjc4")
+Action1 = SubResource("Resource_yvgy7")
+Action2 = SubResource("Resource_bg2sk")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

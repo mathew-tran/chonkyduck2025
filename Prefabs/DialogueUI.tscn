@@ -1,11 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://dch1prjihqcvg"]
+[gd_scene load_steps=8 format=3 uid="uid://dch1prjihqcvg"]
 
 [ext_resource type="Texture2D" uid="uid://b1xfegtp5u3vk" path="res://Art/Characters/ChonkyDuck/ChonkyDuckIdle.png" id="1_g1g66"]
 [ext_resource type="Script" uid="uid://b7os0s3jqls0q" path="res://Scripts/DialogueUI.gd" id="1_rrf6a"]
+[ext_resource type="Texture2D" uid="uid://34hceqcyprr8" path="res://Art/Items/Files.png" id="2_opq0f"]
 [ext_resource type="Texture2D" uid="uid://dmdou6d66gdmw" path="res://Art/Characters/SecurityLead/SecurityLeadIdle.png" id="2_rrf6a"]
 [ext_resource type="Texture2D" uid="uid://bxcl8ri5abn0d" path="res://Art/UI/DialogueBo.png" id="3_opq0f"]
-[ext_resource type="Texture2D" uid="uid://bi8dotweq366s" path="res://Art/UI/DialogueSpeakArrow.png" id="4_lwf1i"]
 [ext_resource type="Texture2D" uid="uid://b4pqt0f4siswm" path="res://Art/UI/DialogueContinueArrow.png" id="6_opq0f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rrf6a"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.0470588, 0.0509804, 0.0627451, 1)
+expand_margin_left = 2.0
+expand_margin_top = 2.0
 
 [node name="Dialogue" type="Control" groups=["DialogueUI"]]
 layout_mode = 3
@@ -15,6 +24,30 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rrf6a")
+
+[node name="Background" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(1920, 1080)
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+
+[node name="ObjectOfInterest" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -393.5
+offset_right = 100.0
+offset_bottom = 393.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_opq0f")
+expand_mode = 4
+stretch_mode = 5
 
 [node name="LeftPortrait" type="TextureRect" parent="."]
 layout_mode = 0
@@ -33,6 +66,7 @@ offset_bottom = 712.0
 texture = ExtResource("2_rrf6a")
 
 [node name="DialogueBox" type="TextureRect" parent="."]
+modulate = Color(1, 1, 1, 0.85098)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -46,23 +80,6 @@ offset_bottom = -12.0
 grow_horizontal = 2
 grow_vertical = 0
 texture = ExtResource("3_opq0f")
-
-[node name="LeftArrow" type="TextureRect" parent="DialogueBox"]
-layout_mode = 0
-offset_left = 138.0
-offset_top = -69.0
-offset_right = 227.0
-offset_bottom = 11.0
-texture = ExtResource("4_lwf1i")
-
-[node name="RightArrow" type="TextureRect" parent="DialogueBox"]
-layout_mode = 0
-offset_left = 1642.0
-offset_top = -71.0
-offset_right = 1731.0
-offset_bottom = 9.0
-texture = ExtResource("4_lwf1i")
-flip_h = true
 
 [node name="Label" type="Label" parent="."]
 modulate = Color(0.0470588, 0.0509804, 0.0627451, 1)
@@ -92,3 +109,31 @@ offset_top = 77.0
 offset_bottom = -508.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="LeftOwner" type="Label" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 695.0
+offset_right = 465.0
+offset_bottom = 818.0
+theme_override_font_sizes/font_size = 60
+theme_override_styles/normal = SubResource("StyleBoxFlat_rrf6a")
+text = "Jack Feathers"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="RightOwner" type="Label" parent="."]
+custom_minimum_size = Vector2(300, 150)
+layout_mode = 0
+offset_left = 1570.0
+offset_top = 646.0
+offset_right = 1870.0
+offset_bottom = 796.0
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = SubResource("StyleBoxFlat_rrf6a")
+text = "Olivia 
+Receptionist"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+text_direction = 1

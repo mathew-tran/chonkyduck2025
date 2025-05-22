@@ -18,33 +18,44 @@ var ActionButtonClass = load("res://Prefabs/ActionButton.tscn")
 
 func _ready() -> void:
 	print(len($Label.text))
-	InjectDialogue(load("res://Content/Dialogues/Act1/Act1Part1Dialogue.tres"))
+	InjectDialogue(load("res://Content/Dialogues/Act1/Act1Part1DialoguePart1.tres"))
 	
 func InjectDialogue(dialogue : DialogueData):
+	$ObjectOfInterest.texture = dialogue.ObjectOfInterest
 	ClearActions()
+	if dialogue.Background:
+		$Background.texture = dialogue.Background
 	CurrentState = STATE.SHOW_DIALOGUE
 	DialogueRef = dialogue
 	QueueText(dialogue.DialogueToSay)
-	$DialogueBox/LeftArrow.visible = false
-	$DialogueBox/RightArrow.visible = false
+	$LeftOwner.visible = false
+	$RightOwner.visible = false
 	$RightPortrait.visible = false
 	$LeftPortrait.visible = false
 	
 	if dialogue.bIsPlayer:
 		$LeftPortrait.texture = dialogue.GetSpeakerRef().SpeakerImage
 		$LeftPortrait.visible = true
-		$DialogueBox/LeftArrow.visible = true
+		$LeftOwner.text = dialogue.GetSpeakerRef().SpeakerName
+		$LeftOwner.visible = true
 	else:
-		$RightPortrait.texture = dialogue.GetSpeakerRef().SpeakerImage
-		$RightPortrait.visible = true
-		$DialogueBox/RightArrow.visible = true
+		if dialogue.SpeakerRef:
+			$RightPortrait.texture = dialogue.GetSpeakerRef().SpeakerImage
+			$RightPortrait.visible = true
+			$RightOwner.text = dialogue.GetSpeakerRef().SpeakerName
+			$RightOwner.visible = true
 		
 	
 	
 	
 func QueueText(newText):
 	TextToShow.clear()
-	var textLeft = Array(newText.split(" "))
+	newText = newText.strip_edges()
+	var textInSentences = Array(newText.split("\n"))
+	var textLeft = []
+	for textInSentence in textInSentences:
+		textLeft.append_array(textInSentence.split(" "))
+		textLeft.append("<br>")
 
 	while len(textLeft) != 0:
 		var textToAdd = ""
@@ -52,8 +63,14 @@ func QueueText(newText):
 			var constructedString = textLeft[0] + textToAdd
 			if len(constructedString) > DialogueBoxTextLimit:
 				break
-			textToAdd += textLeft.pop_front() + " "
-		TextToShow.append(textToAdd)
+			var currentText = textLeft.pop_front()
+			if currentText == "<br>":
+				break
+			else:
+				textToAdd += currentText + " "
+		textToAdd = textToAdd.strip_edges()
+		if len(textToAdd) > 0:
+			TextToShow.append(textToAdd)
 	print(TextToShow)
 	ShowNextText()
 
