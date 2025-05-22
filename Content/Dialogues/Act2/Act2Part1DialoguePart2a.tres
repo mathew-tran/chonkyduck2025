@@ -1,13 +1,15 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://dptqgrwi6qyb5"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://dptqgrwi6qyb5"]
 
 [ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_31518"]
+[ext_resource type="Resource" uid="uid://2pxefsuiu0gc" path="res://Content/Dialogues/Act3/Act3Part1DialoguePart1.tres" id="1_miesg"]
 [ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="2_miesg"]
 [ext_resource type="Resource" uid="uid://bftlgdtjcykj" path="res://Content/Speakers/SpeakerOlivia.tres" id="3_vp1e2"]
 [ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_7okyh"]
 
 [sub_resource type="Resource" id="Resource_yvgy7"]
 script = ExtResource("1_31518")
-ActionName = "Name"
+ActionName = "Go to exhibit"
+DialogueRef = ExtResource("1_miesg")
 metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]

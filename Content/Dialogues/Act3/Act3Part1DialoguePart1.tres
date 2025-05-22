@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=3 format=3 uid="uid://2pxefsuiu0gc"]
+
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_4kkto"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="1_737dn"]
+
+[resource]
+script = ExtResource("1_4kkto")
+bIsPlayer = false
+DialogueToSay = "Jack Feathers enters the exhibit and sees the diamond across from him.
+Jack notices a bunch of cameras watching it intently."
+Background = ExtResource("1_737dn")
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"
