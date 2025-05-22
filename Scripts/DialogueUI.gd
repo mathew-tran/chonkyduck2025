@@ -20,6 +20,8 @@ var ActionButtonClass = load("res://Prefabs/ActionButton.tscn")
 
 var InPosition = Vector2.ZERO
 
+func _enter_tree() -> void:
+	$CoverPanel.visible = true
 func _ready() -> void:
 	InPosition = $CoverPanel.global_position
 	print(len($Label.text))
@@ -126,6 +128,9 @@ func ShowNextText():
 		return
 		
 	if TextToShow.size() > 0:
+		$Label.visible_characters = 0
+		var tween = get_tree().create_tween()
+		tween.tween_property($Label, "visible_characters", DialogueBoxTextLimit, .5)
 		$Label.text = TextToShow.pop_front()
 		$ContinueArrow.visible = TextToShow.size() > 0
 	else:

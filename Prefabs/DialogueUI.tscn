@@ -101,6 +101,9 @@ offset_bottom = 1041.0
 theme_override_font_sizes/font_size = 80
 text = "1234567890 1234567890 1234567890 1234567890 1234567890 1234567890 12345678"
 autowrap_mode = 2
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
 
 [node name="ContinueArrow" parent="." instance=ExtResource("6_opq0f")]
 layout_mode = 0
@@ -149,6 +152,7 @@ autowrap_mode = 2
 text_direction = 1
 
 [node name="CoverPanel" type="Panel" parent="."]
+visible = false
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
