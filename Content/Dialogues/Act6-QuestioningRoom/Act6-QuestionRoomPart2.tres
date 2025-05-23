@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://c0vgma8c6oqdb"]
+
+[ext_resource type="Texture2D" uid="uid://d1lnkwrn50uf0" path="res://Art/Backgrounds/MuseumQuestioningRoom.png" id="1_1ei1i"]
+[ext_resource type="Resource" uid="uid://6aecy7eoa3th" path="res://Content/Dialogues/Act6-QuestioningRoom/Act6-QuestionRoomPart3.tres" id="1_h7ci2"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_q5en6"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="2_mxb3v"]
+[ext_resource type="Texture2D" uid="uid://ca3ngnlxtd6fx" path="res://Art/Characters/ChonkyDuck/ChonkyDuckSurprised.png" id="2_q5en6"]
+
+[sub_resource type="Resource" id="Resource_h7ci2"]
+script = ExtResource("1_q5en6")
+ActionName = "...."
+DialogueRef = ExtResource("1_h7ci2")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("2_mxb3v")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack feathers looks noticeably worried."
+Background = ExtResource("1_1ei1i")
+ObjectOfInterest = ExtResource("2_q5en6")
+Action1 = SubResource("Resource_h7ci2")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

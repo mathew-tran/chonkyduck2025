@@ -23,9 +23,11 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 script = ExtResource("3_81ob6")
 bIsPlayer = false
 SpeakerRef = ExtResource("3_cqjc4")
+EmoteState = 0
 DialogueToSay = "Hello there! Welcome to the Robertsonian National Museum of History!
 Have you come to see this magnificent pink diamond called \"Eternal Youth\"? Everyone has been coming to see it!"
 Background = ExtResource("2_cqjc4")
 Action1 = SubResource("Resource_yvgy7")
 Action2 = SubResource("Resource_bg2sk")
+bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

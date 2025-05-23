@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://cp8w67ey67ek4"]
+
+[ext_resource type="Resource" uid="uid://jxj6dl606auu" path="res://Content/Dialogues/Act5-ElectricalRoom/Act5-ElectricalPart4.tres" id="1_80l2u"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="1_f7akm"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_5yle3"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_80l2u"]
+[ext_resource type="Texture2D" uid="uid://5xhhnhs0pwo5" path="res://Art/Characters/TimSuspicious/TimSuspiciousIdle.png" id="4_s8pko"]
+
+[sub_resource type="Resource" id="Resource_ewbpv"]
+script = ExtResource("2_5yle3")
+ActionName = "What are you doing?"
+DialogueRef = ExtResource("1_80l2u")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_80l2u")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "A suspicious man pops up."
+Background = ExtResource("1_f7akm")
+ObjectOfInterest = ExtResource("4_s8pko")
+Action1 = SubResource("Resource_ewbpv")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

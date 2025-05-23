@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://cvre75v16i7ie"]
+
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="1_j5obm"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_y57su"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="2_jmfx3"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="2_y57su"]
+
+[sub_resource type="Resource" id="Resource_r38jg"]
+script = ExtResource("1_y57su")
+ActionName = "Restart Game"
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("2_jmfx3")
+bIsPlayer = false
+SpeakerRef = ExtResource("2_y57su")
+EmoteState = 0
+DialogueToSay = "Not so fast! 
+You are coming with us!"
+Background = ExtResource("1_j5obm")
+Action1 = SubResource("Resource_r38jg")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

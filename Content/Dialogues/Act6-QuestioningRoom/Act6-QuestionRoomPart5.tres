@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://dgwcfd2w4uyy3"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_dtg7u"]
+[ext_resource type="Texture2D" uid="uid://d1lnkwrn50uf0" path="res://Art/Backgrounds/MuseumQuestioningRoom.png" id="2_fwk6v"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_b6xfb"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="3_fwk6v"]
+
+[sub_resource type="Resource" id="Resource_abk67"]
+script = ExtResource("1_dtg7u")
+ActionName = "Restart Game"
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_b6xfb")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_fwk6v")
+EmoteState = 0
+DialogueToSay = "No you can't.
+I've done a check on you and it turns out you had contact with Marlon Birdo recently.
+Not to mention the security footage of you looking suspicious today.
+We are going to have to you lock you up."
+Background = ExtResource("2_fwk6v")
+Action1 = SubResource("Resource_abk67")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

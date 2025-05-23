@@ -14,9 +14,11 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 [resource]
 script = ExtResource("3_bsegi")
 bIsPlayer = true
+EmoteState = 0
 DialogueToSay = "Well, I guess I'll be checking out the 
 Robertsonian National Museum of History tommorow.
 This should be easy. Just need to case the place, then do the deed!"
 Background = ExtResource("2_b3ken")
 Action1 = SubResource("Resource_2u8nd")
+bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

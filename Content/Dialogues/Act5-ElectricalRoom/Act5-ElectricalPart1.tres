@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://d2ikmbuesxyrh"]
+
+[ext_resource type="Resource" uid="uid://5srby38xnqxd" path="res://Content/Dialogues/Act5-ElectricalRoom/Act5-ElectricalPart2.tres" id="1_igf7h"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="1_u6a51"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_vw108"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_d2jsc"]
+
+[sub_resource type="Resource" id="Resource_ynrko"]
+script = ExtResource("2_d2jsc")
+ActionName = "Inspect Further"
+DialogueRef = ExtResource("1_igf7h")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_vw108")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers begins to look around further and notices an electrical room."
+Background = ExtResource("1_u6a51")
+Action1 = SubResource("Resource_ynrko")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

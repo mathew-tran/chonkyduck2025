@@ -26,7 +26,9 @@ func _enter_tree() -> void:
 func _ready() -> void:
 	InPosition = $CoverPanel.global_position
 	print(len($Label.text))
-	await AnimateOut()
+	
+	if StartingDialogue != load("res://Content/Dialogues/Act1/Act1Part1DialoguePart1.tres"):
+		await AnimateOut()
 	InjectDialogue(StartingDialogue)
 	
 func AnimateOut():	

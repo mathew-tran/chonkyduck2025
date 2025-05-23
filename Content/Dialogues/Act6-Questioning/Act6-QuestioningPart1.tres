@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://babbe6s21bht0"]
+
+[ext_resource type="Resource" uid="uid://cksx5he7tx0fd" path="res://Content/Dialogues/Act6-Questioning/Act6-QuestioningPart2.tres" id="1_t4wm1"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_xuaa0"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_xxny2"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="3_ogqrn"]
+
+[sub_resource type="Resource" id="Resource_ti0hp"]
+script = ExtResource("2_xxny2")
+ActionName = "..."
+DialogueRef = ExtResource("1_t4wm1")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_xuaa0")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers begins to leave the museum."
+Background = ExtResource("3_ogqrn")
+Action1 = SubResource("Resource_ti0hp")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

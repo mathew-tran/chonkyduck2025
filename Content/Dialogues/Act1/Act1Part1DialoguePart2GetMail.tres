@@ -15,8 +15,10 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 [resource]
 script = ExtResource("3_nkeoi")
 bIsPlayer = true
+EmoteState = 0
 DialogueToSay = "What's this?"
 Background = ExtResource("2_gphqd")
 ObjectOfInterest = ExtResource("4_nkeoi")
 Action1 = SubResource("Resource_2u8nd")
+bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

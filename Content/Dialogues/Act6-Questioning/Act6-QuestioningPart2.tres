@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://cksx5he7tx0fd"]
+
+[ext_resource type="Resource" uid="uid://ykx3stpalwf7" path="res://Content/Dialogues/Act6-Questioning/Act6-QuestioningPart3.tres" id="1_hrkvw"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_i2l82"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="2_hrkvw"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_5lvrr"]
+
+[sub_resource type="Resource" id="Resource_ti0hp"]
+script = ExtResource("1_i2l82")
+ActionName = "..."
+DialogueRef = ExtResource("1_hrkvw")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_5lvrr")
+bIsPlayer = true
+EmoteState = 0
+DialogueToSay = "That was easy!
+All I need to do, is come by here later tonight, bring some of my tools. Turn off the electricity. 
+Then I can take the diamond and bring it back for Marlon!"
+Background = ExtResource("2_hrkvw")
+Action1 = SubResource("Resource_ti0hp")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

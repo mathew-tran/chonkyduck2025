@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://cnv8x4gnl6twh"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_80eqq"]
+[ext_resource type="Resource" uid="uid://ptgsjpbk3vfe" path="res://Content/Dialogues/Act5-ElectricalRoom/Act5-ElectricalPart6.tres" id="1_inwwo"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_inwwo"]
+[ext_resource type="Resource" uid="uid://5nlov5yhw5k2" path="res://Content/Speakers/SpeakerTimSuspicious.tres" id="3_f0ggv"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_bf55s"]
+
+[sub_resource type="Resource" id="Resource_ewbpv"]
+script = ExtResource("1_80eqq")
+ActionName = "Hey, that hurts."
+DialogueRef = ExtResource("1_inwwo")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_bf55s")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_f0ggv")
+EmoteState = 1
+DialogueToSay = "Well..
+Well....
+Well you are stupid!"
+Background = ExtResource("2_inwwo")
+Action1 = SubResource("Resource_ewbpv")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

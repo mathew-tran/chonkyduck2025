@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://67xsmxgu4gsq"]
+
+[ext_resource type="Resource" uid="uid://cvre75v16i7ie" path="res://Content/Dialogues/Act7-WindowEscape/Act7-WindowEscapePart2.tres" id="1_8uhow"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_ftmui"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_tcmj4"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="3_am2j3"]
+
+[sub_resource type="Resource" id="Resource_t4v2f"]
+script = ExtResource("2_tcmj4")
+ActionName = "Continue."
+DialogueRef = ExtResource("1_8uhow")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_ftmui")
+bIsPlayer = true
+EmoteState = 0
+DialogueToSay = "Phew.
+I am back home."
+Background = ExtResource("3_am2j3")
+Action1 = SubResource("Resource_t4v2f")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

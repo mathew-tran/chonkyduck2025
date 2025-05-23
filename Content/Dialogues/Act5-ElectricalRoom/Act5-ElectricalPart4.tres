@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://jxj6dl606auu"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_grstv"]
+[ext_resource type="Resource" uid="uid://cnv8x4gnl6twh" path="res://Content/Dialogues/Act5-ElectricalRoom/Act5-ElectricalPart5.tres" id="1_k75ws"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_k75ws"]
+[ext_resource type="Resource" uid="uid://5nlov5yhw5k2" path="res://Content/Speakers/SpeakerTimSuspicious.tres" id="3_grstv"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_jajcs"]
+
+[sub_resource type="Resource" id="Resource_ewbpv"]
+script = ExtResource("1_grstv")
+ActionName = "I don't think you are cut out for it either"
+DialogueRef = ExtResource("1_k75ws")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_jajcs")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_grstv")
+EmoteState = 0
+DialogueToSay = "What am I doing?? What are YOU DOING?
+You look mighty suspicious. I saw you peeking and poking around.
+I even saw you talk to the guards just now. If you wanted to do something stupid, I don't think you are cut out for it."
+Background = ExtResource("2_k75ws")
+Action1 = SubResource("Resource_ewbpv")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

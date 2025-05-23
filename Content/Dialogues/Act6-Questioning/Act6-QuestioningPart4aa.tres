@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://5trdeugr3g40"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_0x86t"]
+[ext_resource type="Resource" uid="uid://ceor861ixypfe" path="res://Content/Dialogues/Act6-QuestioningRoom/Act6-QuestionRoomPart1.tres" id="1_ghsl2"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="2_ghsl2"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="3_r73ep"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_46yp6"]
+
+[sub_resource type="Resource" id="Resource_ne3qx"]
+script = ExtResource("1_0x86t")
+ActionName = "Yes"
+DialogueRef = ExtResource("1_ghsl2")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_46yp6")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_r73ep")
+EmoteState = 2
+DialogueToSay = "Come with me. We need to talk."
+Background = ExtResource("2_ghsl2")
+Action1 = SubResource("Resource_ne3qx")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

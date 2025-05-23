@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://crdclfgboqvlo"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_gnxt4"]
+[ext_resource type="Resource" uid="uid://babbe6s21bht0" path="res://Content/Dialogues/Act6-Questioning/Act6-QuestioningPart1.tres" id="1_iem22"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_iem22"]
+[ext_resource type="Resource" uid="uid://btf8onbdms2gb" path="res://Content/Dialogues/Act6-AvoidAndGotoWashroom/Act6-AvoidAndGotoWashroomPart1.tres" id="3_iem22"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_nuosx"]
+
+[sub_resource type="Resource" id="Resource_ewbpv"]
+script = ExtResource("1_gnxt4")
+ActionName = "Head out of the museum."
+DialogueRef = ExtResource("1_iem22")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_gnxt4"]
+script = ExtResource("1_gnxt4")
+ActionName = "Quickly walk to the bathroom"
+DialogueRef = ExtResource("3_iem22")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_nuosx")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Tim the suspicious man is flustered, then he quickly whispers as he passes Jack by.
+\"5522 is the combination\"
+Then he disappears without a trace.
+Jack realizes that Tim was quite odd and began wondering.. How many people are here to take the diamond?
+You start to hear some commotion in the corner."
+Background = ExtResource("2_iem22")
+Action1 = SubResource("Resource_ewbpv")
+Action2 = SubResource("Resource_gnxt4")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

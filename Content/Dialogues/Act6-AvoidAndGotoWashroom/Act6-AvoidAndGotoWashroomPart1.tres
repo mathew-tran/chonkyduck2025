@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://btf8onbdms2gb"]
+
+[ext_resource type="Resource" uid="uid://67xsmxgu4gsq" path="res://Content/Dialogues/Act7-WindowEscape/Act7-WindowEscapePart1.tres" id="1_4uejo"]
+[ext_resource type="Texture2D" uid="uid://crsrkf41sy6g7" path="res://Art/Backgrounds/MuseumBathroom.png" id="1_8rcow"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_24k4l"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_o5qiq"]
+[ext_resource type="Texture2D" uid="uid://b1xfegtp5u3vk" path="res://Art/Characters/ChonkyDuck/ChonkyDuckIdle.png" id="2_o5qiq"]
+
+[sub_resource type="Resource" id="Resource_4uejo"]
+script = ExtResource("1_o5qiq")
+ActionName = "Escape via the window."
+DialogueRef = ExtResource("1_4uejo")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_24k4l")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers goes to the washroom
+Foot steps go by.
+Jack realizes that security is onto him."
+Background = ExtResource("1_8rcow")
+ObjectOfInterest = ExtResource("2_o5qiq")
+Action1 = SubResource("Resource_4uejo")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

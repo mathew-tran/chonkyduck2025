@@ -16,6 +16,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 script = ExtResource("4_18wr6")
 bIsPlayer = false
 SpeakerRef = ExtResource("3_jlaih")
+EmoteState = 0
 DialogueToSay = "Ah, yes. So the diamond seems to have been donated by a local philanthropist.
 He does not wish to be named. And we have lost contact with him some time ago.
 Other than that. Things to know, things to know..
@@ -26,4 +27,5 @@ Anyways. I speak too much. You should see it for yourself.
 Have a great day!"
 Background = ExtResource("2_qnsjq")
 Action1 = SubResource("Resource_yvgy7")
+bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

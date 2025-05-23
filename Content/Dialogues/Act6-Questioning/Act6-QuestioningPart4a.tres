@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://rur4nwaxqrln"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_l00uc"]
+[ext_resource type="Resource" uid="uid://5trdeugr3g40" path="res://Content/Dialogues/Act6-Questioning/Act6-QuestioningPart4aa.tres" id="1_sxbfq"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="2_sxbfq"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="3_ba0pw"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_dv1tr"]
+
+[sub_resource type="Resource" id="Resource_ne3qx"]
+script = ExtResource("1_l00uc")
+ActionName = "Yes"
+DialogueRef = ExtResource("1_sxbfq")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_dv1tr")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_ba0pw")
+EmoteState = 2
+DialogueToSay = "A friend, huh? Doesn't happen to be Marlon Birdo does it?
+Does that ring a bell to you?"
+Background = ExtResource("2_sxbfq")
+Action1 = SubResource("Resource_ne3qx")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

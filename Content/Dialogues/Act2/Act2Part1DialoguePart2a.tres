@@ -16,8 +16,10 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 script = ExtResource("4_7okyh")
 bIsPlayer = false
 SpeakerRef = ExtResource("3_vp1e2")
+EmoteState = 0
 DialogueToSay = "Well, come on in! It's early in the morning, so there won't be many people around.
 It'll be a good time to just see it without the noise of the crowd and people bumping into each other!"
 Background = ExtResource("2_miesg")
 Action1 = SubResource("Resource_yvgy7")
+bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

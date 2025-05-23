@@ -26,7 +26,7 @@ SpeakerRef = ExtResource("2_slhmw")
 EmoteState = 0
 DialogueToSay = "Hey you!
 ..
-..
+....
 Not planning to steal this diamond are you?"
 Background = ExtResource("1_6xq7c")
 Action1 = SubResource("Resource_kgpaa")

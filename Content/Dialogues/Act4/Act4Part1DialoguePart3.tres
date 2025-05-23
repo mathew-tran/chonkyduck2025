@@ -8,7 +8,7 @@
 
 [sub_resource type="Resource" id="Resource_upuxr"]
 script = ExtResource("1_v6pk3")
-ActionName = "Turns out I might know someone"
+ActionName = "Not sure who owns it."
 DialogueRef = ExtResource("1_4mknr")
 metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 

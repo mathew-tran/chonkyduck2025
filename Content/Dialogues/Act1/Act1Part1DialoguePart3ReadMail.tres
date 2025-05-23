@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 [resource]
 script = ExtResource("3_xnieb")
 bIsPlayer = false
+EmoteState = 0
 DialogueToSay = "Jack Feathers begins to read the mail.
 A client named Marlon Birdo calls to his aid.
 There is an extremely rare gem called \"Eternal Youth\" that was previously owned by his family and is now on exhibit at the museum.
@@ -22,4 +23,5 @@ Marlon is providing a large sum of money. To return the gem. So much that Jack c
 "
 Background = ExtResource("2_iyfc0")
 Action1 = SubResource("Resource_2u8nd")
+bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

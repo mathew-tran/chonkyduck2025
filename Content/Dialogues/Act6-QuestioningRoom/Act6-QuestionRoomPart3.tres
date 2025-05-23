@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://6aecy7eoa3th"]
+
+[ext_resource type="Texture2D" uid="uid://d1lnkwrn50uf0" path="res://Art/Backgrounds/MuseumQuestioningRoom.png" id="1_cm36w"]
+[ext_resource type="Resource" uid="uid://d4e2fpd0b7oxk" path="res://Content/Dialogues/Act6-QuestioningRoom/Act6-QuestionRoomPart4.tres" id="1_fly7r"]
+[ext_resource type="Resource" uid="uid://dbt11g8s0vpbl" path="res://Content/Speakers/SpeakerSecurityLead.tres" id="2_cm36w"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_nfg5f"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_fly7r"]
+
+[sub_resource type="Resource" id="Resource_pdybn"]
+script = ExtResource("2_nfg5f")
+ActionName = "No."
+DialogueRef = ExtResource("1_fly7r")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_fly7r")
+bIsPlayer = false
+SpeakerRef = ExtResource("2_cm36w")
+EmoteState = 0
+DialogueToSay = "Do you know why you are here?"
+Background = ExtResource("1_cm36w")
+Action1 = SubResource("Resource_pdybn")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

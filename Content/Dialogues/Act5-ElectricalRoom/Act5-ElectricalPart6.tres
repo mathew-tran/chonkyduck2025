@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://ptgsjpbk3vfe"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_3yeyn"]
+[ext_resource type="Resource" uid="uid://crdclfgboqvlo" path="res://Content/Dialogues/Act5-ElectricalRoom/Act5-ElectricalPart7.tres" id="1_k3vd2"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_k3vd2"]
+[ext_resource type="Resource" uid="uid://5nlov5yhw5k2" path="res://Content/Speakers/SpeakerTimSuspicious.tres" id="3_pt3uw"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_x6y2e"]
+
+[sub_resource type="Resource" id="Resource_ewbpv"]
+script = ExtResource("1_3yeyn")
+ActionName = "Fine with me, you are very suspicious."
+DialogueRef = ExtResource("1_k3vd2")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_x6y2e")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_pt3uw")
+EmoteState = 0
+DialogueToSay = "You know what? I don't want to be apart of this anymore.
+I don't want to end up in jail.
+..
+...
+.."
+Background = ExtResource("2_k3vd2")
+Action1 = SubResource("Resource_ewbpv")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

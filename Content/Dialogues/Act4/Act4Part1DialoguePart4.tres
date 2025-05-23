@@ -1,30 +1,25 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://csk5tgd0oc00e"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://csk5tgd0oc00e"]
 
-[ext_resource type="Resource" uid="uid://r3qkhne8oo7l" path="res://Content/Dialogues/Act4/Act4Part1DialoguePart5.tres" id="1_nwu25"]
+[ext_resource type="Resource" uid="uid://d2ikmbuesxyrh" path="res://Content/Dialogues/Act5-ElectricalRoom/Act5-ElectricalPart1.tres" id="1_nwu25"]
 [ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_wfrvt"]
 [ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="2_nwu25"]
 [ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="3_8j6od"]
 [ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_c7slf"]
 
-[sub_resource type="Resource" id="Resource_upuxr"]
-script = ExtResource("1_wfrvt")
-ActionName = "Ever heard of Marlon Brando?"
-DialogueRef = ExtResource("1_nwu25")
-metadata/_custom_type_script = "uid://c7xkm80tcrsro"
-
 [sub_resource type="Resource" id="Resource_nwu25"]
 script = ExtResource("1_wfrvt")
-ActionName = "Nevermind"
+ActionName = "Later."
+DialogueRef = ExtResource("1_nwu25")
 metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("4_c7slf")
 bIsPlayer = false
 SpeakerRef = ExtResource("3_8j6od")
-EmoteState = 0
-DialogueToSay = "Really? Who?"
+EmoteState = 1
+DialogueToSay = "Didn't expect you to haha! Well later.
+Have fun looking at the diamond!"
 Background = ExtResource("2_nwu25")
-Action1 = SubResource("Resource_upuxr")
-Action2 = SubResource("Resource_nwu25")
+Action1 = SubResource("Resource_nwu25")
 bAnimate = false
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

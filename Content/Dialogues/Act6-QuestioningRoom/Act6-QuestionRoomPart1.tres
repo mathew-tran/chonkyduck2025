@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://ceor861ixypfe"]
+
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_84dgb"]
+[ext_resource type="Resource" uid="uid://c0vgma8c6oqdb" path="res://Content/Dialogues/Act6-QuestioningRoom/Act6-QuestionRoomPart2.tres" id="1_l55ji"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_yeb6x"]
+[ext_resource type="Texture2D" uid="uid://d1lnkwrn50uf0" path="res://Art/Backgrounds/MuseumQuestioningRoom.png" id="3_qwdsb"]
+[ext_resource type="Texture2D" uid="uid://ca3ngnlxtd6fx" path="res://Art/Characters/ChonkyDuck/ChonkyDuckSurprised.png" id="4_yeb6x"]
+
+[sub_resource type="Resource" id="Resource_cdhnq"]
+script = ExtResource("2_yeb6x")
+ActionName = "Continue"
+DialogueRef = ExtResource("1_l55ji")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_84dgb")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers enters the room with the guard."
+Background = ExtResource("3_qwdsb")
+ObjectOfInterest = ExtResource("4_yeb6x")
+Action1 = SubResource("Resource_cdhnq")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

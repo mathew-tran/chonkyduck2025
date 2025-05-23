@@ -1,8 +1,20 @@
+TLDR:
 Marlon Birdo is a client who wants to retrieve his gem back.
 He states that the gem has always been in his family. Then one day the gem disappeared.
 He has photos to prove that he has the gem.
 He has told the museum (allegedly) that the gem belonged to his family, but the museum refused to believe it.
 Marlon Birdo wants to take what rightfully is his, and he employs chonky duck to do it.
+
+Jack finds a way to get the diamond.
+
+There are 2 ways to get the diamond.
+
+1. Is to turn off the electricity and then steal the diamonds when the camera is off
+2. Is to convince the old guard to get it back.
+3
+
+
+
 
 Terminology
 Eternal Youth - Pink Diamond - 1.6 pound diamond - Better than Cullinan diamond in every aspect, but it's pink.
@@ -87,8 +99,38 @@ We begin to look around and see if we can find anything else.
 [Look around on the current floor]
 
 
-** FOR MATT **
-We want to have some divergence or bad paths, but we also want to make sure player doesn't get an easy game over
+
+
+Throughline 1
+1. You get mail to go to the museum and retrieve diamond
+2. You go to museum
+3. You see the diamond
+4. You talk to lead of security after they notice you eyeing it suspiciously.
+5. Then you look around the area.
+6. You find a electrical room, but it is locked with a secret pass code.
+7. You talk to a passerby near the electrical room that looks suspicious.
+8. You go to the bathroom then you see the same passerby
+9. You have a heated chat, the passerby gets scared and whispers to you on the way out. The code is 5522. You might want to write it down.
+10. ---
+11. You get stopped by one of the guards in the hall. this is going to a possible failing area.
+---> If you manage to avoid suspicion, you can continue on.
+---> If you don't, the guards find your piece of paper, then ban you from the museum.
+12. You get a call from Marlon Birdo, he is wondering how things are going, but you quickly hang up.
+13. The secondary guard is suspicious and asks who it is
+---> If you say marlon brando, he will tell his boss the next day and banned you from the museum
+---> If you say it was your auntie, he will understand. then let you continue on.
+14. You then make a beeline for the museum exit. say goodbye to Olivia and say thanks for the hospitality.
+15. At night, you successfully steal the diamond. If you did not tell the secondary officer about your call with marlon birdo.
+
+Throughline 2
+1. Before seeing the diamond, you see a hallway with a "DO NOT ENTER" sign
+2. Going through it, you notice a small corridor. Leading to the security room.
+3. The security room is open and you can chose to enter it or not.
+--> If you do not enter it, you return back to the main area, and get brought to the electrical room area and resume as in throughline 1
+--> If you do enter it, you notice some keys
+	--> If you pick up the keys, you can choose to hide in the storage closet for the night and then attempt to steal the diamond, but will fail because the cameras will catch you.
+-> If you don't pick up the keys and continue looking at the cameras for too long, you will get caught by security.
+
 
 
 

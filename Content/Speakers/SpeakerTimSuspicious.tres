@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="SpeakerData" load_steps=4 format=3 uid="uid://5nlov5yhw5k2"]
+
+[ext_resource type="Texture2D" uid="uid://5xhhnhs0pwo5" path="res://Art/Characters/TimSuspicious/TimSuspiciousIdle.png" id="1_vmum6"]
+[ext_resource type="Texture2D" uid="uid://bsn36g1trnhee" path="res://Art/Characters/TimSuspicious/TimSuspiciousSurprised.png" id="2_7uqce"]
+[ext_resource type="Script" uid="uid://cksqek8ep10yn" path="res://Content/SpeakerData.gd" id="4_msq48"]
+
+[resource]
+script = ExtResource("4_msq48")
+SpeakerName = "Tim (Suspicious man)"
+SpeakerImage = ExtResource("1_vmum6")
+SpeakerSurprised = ExtResource("2_7uqce")
+SpeakerAngry = ExtResource("1_vmum6")
+metadata/_custom_type_script = "uid://cksqek8ep10yn"

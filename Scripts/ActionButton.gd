@@ -15,7 +15,10 @@ func Setup(actionRef : ActionData):
 	$Label.text = actionRef.ActionName
 	
 func _on_button_up() -> void:
-	Finder.GetDialogueUI().InjectDialogue(ActionRef.DialogueRef)
+	if $Label.text == "Restart Game":
+		get_tree().reload_current_scene()
+	else:
+		Finder.GetDialogueUI().InjectDialogue(ActionRef.DialogueRef)
 
 
 func _on_animation_player_animation_finished(anim_name: StringName) -> void:
