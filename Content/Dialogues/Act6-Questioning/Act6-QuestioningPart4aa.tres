@@ -8,7 +8,7 @@
 
 [sub_resource type="Resource" id="Resource_ne3qx"]
 script = ExtResource("1_0x86t")
-ActionName = "Yes"
+ActionName = "Alright..."
 DialogueRef = ExtResource("1_ghsl2")
 metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 

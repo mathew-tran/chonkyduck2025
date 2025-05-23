@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=10 format=3 uid="uid://umcsqe5rudyb"]
+
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_ik1j1"]
+[ext_resource type="Resource" uid="uid://baygxw52xao5p" path="res://Content/Dialogues/Act8-WrongPasscode/Act8-WrongPasscode-Part1.tres" id="1_t4ovu"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_5lvq3"]
+[ext_resource type="Resource" uid="uid://cop7u4k3gxisw" path="res://Content/Dialogues/Act8-RightPasscode/Act8-RightPasscode-Part1.tres" id="3_5lvq3"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="4_cowrs"]
+
+[sub_resource type="Resource" id="Resource_cowrs"]
+script = ExtResource("2_5lvq3")
+ActionName = "2522"
+DialogueRef = ExtResource("1_t4ovu")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_gi10v"]
+script = ExtResource("2_5lvq3")
+ActionName = "3221"
+DialogueRef = ExtResource("1_t4ovu")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_7k348"]
+script = ExtResource("2_5lvq3")
+ActionName = "2255"
+DialogueRef = ExtResource("1_t4ovu")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_06xqd"]
+script = ExtResource("2_5lvq3")
+ActionName = "5522"
+DialogueRef = ExtResource("3_5lvq3")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_ik1j1")
+bIsPlayer = true
+EmoteState = 1
+DialogueToSay = "I've made it to the electrical room area.
+What's the passcode I should enter again?"
+Background = ExtResource("4_cowrs")
+Action1 = SubResource("Resource_cowrs")
+Action2 = SubResource("Resource_gi10v")
+Action3 = SubResource("Resource_7k348")
+Action4 = SubResource("Resource_06xqd")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

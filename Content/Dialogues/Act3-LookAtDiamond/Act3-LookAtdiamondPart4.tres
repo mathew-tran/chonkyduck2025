@@ -1,0 +1,29 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://cevgmsvfogdju"]
+
+[ext_resource type="Resource" uid="uid://byuq0ehpmdd2f" path="res://Content/Dialogues/Act3-LookAtDiamond/Act3-LookAtdiamondPart5.tres" id="1_atvf7"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_xunvg"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_4fiyv"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_atvf7"]
+[ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="4_mbgpv"]
+
+[sub_resource type="Resource" id="Resource_po1ix"]
+script = ExtResource("1_xunvg")
+ActionName = "Yeah, it sure is!"
+DialogueRef = ExtResource("1_atvf7")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_atvf7")
+bIsPlayer = false
+SpeakerRef = ExtResource("4_mbgpv")
+EmoteState = 1
+DialogueToSay = "Hey you, what you looking at?
+There's no drinks around here, and it's boring electrical stuff here.
+..
+..
+Just joking!
+I noticed you were eyeing the diamond. It looks pretty, huh?"
+Background = ExtResource("2_4fiyv")
+Action1 = SubResource("Resource_po1ix")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

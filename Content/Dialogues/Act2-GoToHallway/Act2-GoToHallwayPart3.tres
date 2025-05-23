@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://b874fqke1yxrq"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_pimk4"]
+[ext_resource type="Resource" uid="uid://cxf2r167apjmt" path="res://Content/Dialogues/Act2-GoToHallway/Act2-GoToHallwayPart4.tres" id="1_w220d"]
+[ext_resource type="Texture2D" uid="uid://bubelft3ywu6f" path="res://Art/Backgrounds/MuseumHallway.png" id="2_w220d"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_6vhb7"]
+
+[sub_resource type="Resource" id="Resource_voo0d"]
+script = ExtResource("1_pimk4")
+ActionName = "Pick up the note"
+DialogueRef = ExtResource("1_w220d")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_6vhb7")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "The man continues off in a hurry and then accidentally drops a note."
+Background = ExtResource("2_w220d")
+Action1 = SubResource("Resource_voo0d")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

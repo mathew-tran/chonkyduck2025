@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://b81v4bcsgubut"]
+
+[ext_resource type="Resource" uid="uid://xlxcdexc5ro" path="res://Content/Dialogues/Act8-GoToExhibit/Act8-GoToExhibit-Part2.tres" id="1_4sfxv"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_ms5o3"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_vt6yl"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="2_4sfxv"]
+
+[sub_resource type="Resource" id="Resource_w3wq4"]
+script = ExtResource("1_vt6yl")
+ActionName = "Reach for Diamond"
+DialogueRef = ExtResource("1_4sfxv")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_ms5o3")
+bIsPlayer = true
+EmoteState = 0
+DialogueToSay = "Easy does it..
+Easy does it.
+"
+Background = ExtResource("2_4sfxv")
+Action1 = SubResource("Resource_w3wq4")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://5kcco3uqihwd"]
+
+[ext_resource type="Resource" uid="uid://7ce7h0kv1kfy" path="res://Content/Dialogues/Act2/Act2Part1DialoguePart2.tres" id="1_21jd4"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_ywe5s"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="4_wn31u"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="5_hd3fu"]
+
+[sub_resource type="Resource" id="Resource_yvgy7"]
+script = ExtResource("2_ywe5s")
+ActionName = "Talk to Clerk"
+DialogueRef = ExtResource("1_21jd4")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("5_hd3fu")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack feathers comes back from the Hallway. He notices the Clerk."
+Background = ExtResource("4_wn31u")
+Action1 = SubResource("Resource_yvgy7")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

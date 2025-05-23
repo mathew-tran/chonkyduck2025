@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://b6lo503u33486"]
+[gd_resource type="Resource" script_class="DialogueData" load_steps=8 format=3 uid="uid://b6lo503u33486"]
 
 [ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_ln04a"]
 [ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_rmraw"]
 [ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="1_v1oo3"]
 [ext_resource type="Resource" uid="uid://7ce7h0kv1kfy" path="res://Content/Dialogues/Act2/Act2Part1DialoguePart2.tres" id="1_yvgy7"]
+[ext_resource type="Resource" uid="uid://c2xj7ycukaa2x" path="res://Content/Dialogues/Act2-GoToHallway/Act2-GoToHallwayPart1.tres" id="3_vr7yf"]
 
 [sub_resource type="Resource" id="Resource_yvgy7"]
 script = ExtResource("1_rmraw")
@@ -11,14 +12,20 @@ ActionName = "Talk to Clerk"
 DialogueRef = ExtResource("1_yvgy7")
 metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
+[sub_resource type="Resource" id="Resource_vr7yf"]
+script = ExtResource("1_rmraw")
+ActionName = "Go to Hallway"
+DialogueRef = ExtResource("3_vr7yf")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
 [resource]
 script = ExtResource("1_ln04a")
 bIsPlayer = false
 EmoteState = 0
 DialogueToSay = "It is early morning.
-Jack Feathers enters the Robertsonian National Museum of History.
-He sees a clerk at the desk and moves forward."
+Jack Feathers enters the Robertsonian National Museum of History."
 Background = ExtResource("1_v1oo3")
 Action1 = SubResource("Resource_yvgy7")
+Action2 = SubResource("Resource_vr7yf")
 bAnimate = true
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

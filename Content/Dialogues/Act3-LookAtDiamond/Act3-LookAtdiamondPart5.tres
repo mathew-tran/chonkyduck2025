@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://byuq0ehpmdd2f"]
+
+[ext_resource type="Resource" uid="uid://c4q8tcemwhjc4" path="res://Content/Dialogues/Act3-LookAtDiamond/Act3-LookAtdiamondPart6.tres" id="1_1h8jx"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_5bds7"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_1h8jx"]
+[ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="3_sbho6"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_0vcyq"]
+
+[sub_resource type="Resource" id="Resource_po1ix"]
+script = ExtResource("1_5bds7")
+ActionName = "I understand."
+DialogueRef = ExtResource("1_1h8jx")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_0vcyq")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_sbho6")
+EmoteState = 0
+DialogueToSay = "You might want to turn the other way. 
+You don't seem to suspicious, but my boss might think you are.
+We are really trying to keep this place secure and my boss can be very paranoid on potential robbers.
+We had a couple of break ins last week."
+Background = ExtResource("2_1h8jx")
+Action1 = SubResource("Resource_po1ix")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

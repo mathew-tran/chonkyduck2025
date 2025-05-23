@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://tigh0cx81xag"]
+
+[ext_resource type="Resource" uid="uid://cgrtwl486cady" path="res://Content/Dialogues/Act3-HeadHome/Act3-HeatHomePart1.tres" id="1_ae1ii"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_j37b7"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="2_ae1ii"]
+[ext_resource type="Resource" uid="uid://boum1gjjvdm0e" path="res://Content/Speakers/SpeakerSecurityJunior.tres" id="3_nt0gv"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_2ivm4"]
+
+[sub_resource type="Resource" id="Resource_po1ix"]
+script = ExtResource("1_j37b7")
+ActionName = "Head home"
+DialogueRef = ExtResource("1_ae1ii")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_2ivm4")
+bIsPlayer = false
+SpeakerRef = ExtResource("3_nt0gv")
+EmoteState = 0
+DialogueToSay = "Cheers, and let me know if you see anyone suspicious.
+I saw someone with a coat earlier this week and I must've scared him after I gave him a small chat.
+Well anyways. I gotta go!"
+Background = ExtResource("2_ae1ii")
+Action1 = SubResource("Resource_po1ix")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

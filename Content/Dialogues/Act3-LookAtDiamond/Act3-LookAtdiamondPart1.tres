@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://b7slrscx0lc2a"]
+
+[ext_resource type="Resource" uid="uid://bhc4ft7dfpg02" path="res://Content/Dialogues/Act3-LookAtDiamond/Act3-LookAtdiamondPart2.tres" id="1_bafom"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="1_kqgc7"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_tl2qo"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_b28hh"]
+[ext_resource type="Texture2D" uid="uid://bt0gvarl0pqg7" path="res://Art/Items/Diamond.png" id="2_mlv2g"]
+
+[sub_resource type="Resource" id="Resource_po1ix"]
+script = ExtResource("2_b28hh")
+ActionName = "Subtly look at cameras"
+DialogueRef = ExtResource("1_bafom")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_tl2qo")
+bIsPlayer = true
+EmoteState = 0
+DialogueToSay = "Wow this is pretty beautiful.
+I wonder where it came from."
+Background = ExtResource("1_kqgc7")
+ObjectOfInterest = ExtResource("2_mlv2g")
+Action1 = SubResource("Resource_po1ix")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

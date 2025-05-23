@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://bhc4ft7dfpg02"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_2ufrt"]
+[ext_resource type="Resource" uid="uid://cxrapqf6tb2bj" path="res://Content/Dialogues/Act3-LookAtDiamond/Act3-LookAtdiamondPart3.tres" id="1_v2hh1"]
+[ext_resource type="Texture2D" uid="uid://jjxjlno31mcu" path="res://Art/Backgrounds/MuseumDiamond.png" id="2_v2hh1"]
+[ext_resource type="Texture2D" uid="uid://bt0gvarl0pqg7" path="res://Art/Items/Diamond.png" id="3_7py8q"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_xjw1j"]
+
+[sub_resource type="Resource" id="Resource_po1ix"]
+script = ExtResource("1_2ufrt")
+ActionName = "Glance at door"
+DialogueRef = ExtResource("1_v2hh1")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_xjw1j")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack notices a few cameras on the left and right. But also happens to see a door to the far left.
+"
+Background = ExtResource("2_v2hh1")
+ObjectOfInterest = ExtResource("3_7py8q")
+Action1 = SubResource("Resource_po1ix")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

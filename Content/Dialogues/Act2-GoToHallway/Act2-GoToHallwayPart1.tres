@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://c2xj7ycukaa2x"]
+
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_oumbn"]
+[ext_resource type="Resource" uid="uid://k01bw0fwyyyb" path="res://Content/Dialogues/Act2-GoToHallway/Act2-GoToHallwayPart2.tres" id="1_pir3d"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_6hxna"]
+[ext_resource type="Texture2D" uid="uid://bubelft3ywu6f" path="res://Art/Backgrounds/MuseumHallway.png" id="3_y38kc"]
+
+[sub_resource type="Resource" id="Resource_voo0d"]
+script = ExtResource("2_6hxna")
+ActionName = "Talk to Stranger"
+DialogueRef = ExtResource("1_pir3d")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_oumbn")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers surveys the hall.
+Some scraps of paper are littered on the floor.
+A person walks by seemingly nervous
+"
+Background = ExtResource("3_y38kc")
+Action1 = SubResource("Resource_voo0d")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

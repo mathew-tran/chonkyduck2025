@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://dv84vunfdqnv1"]
+
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_dkwi7"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_mmrn7"]
+[ext_resource type="Resource" uid="uid://byv7tdilggi5m" path="res://Content/Dialogues/Act9-GameWin/Act9-GameWinPart2.tres" id="1_ury6b"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="2_ury6b"]
+[ext_resource type="Texture2D" uid="uid://bt0gvarl0pqg7" path="res://Art/Items/Diamond.png" id="3_xh3ms"]
+
+[sub_resource type="Resource" id="Resource_ncfb4"]
+script = ExtResource("1_mmrn7")
+ActionName = "Continue"
+DialogueRef = ExtResource("1_ury6b")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_dkwi7")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers goes home successfully with the diamond.
+He then hands off the Diamond the following day to Marlon Birdo."
+Background = ExtResource("2_ury6b")
+ObjectOfInterest = ExtResource("3_xh3ms")
+Action1 = SubResource("Resource_ncfb4")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

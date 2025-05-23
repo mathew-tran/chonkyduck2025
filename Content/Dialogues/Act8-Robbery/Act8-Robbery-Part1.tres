@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=9 format=3 uid="uid://be66vxcpvj1fs"]
+
+[ext_resource type="Resource" uid="uid://b81v4bcsgubut" path="res://Content/Dialogues/Act8-GoToExhibit/Act8-GoToExhibit-Part1.tres" id="1_0eagq"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="2_hwiww"]
+[ext_resource type="Resource" uid="uid://umcsqe5rudyb" path="res://Content/Dialogues/Act8-ElectricalRoom/Act8-ElectricalRoom-Part1.tres" id="3_hwiww"]
+[ext_resource type="Texture2D" uid="uid://bi68jf8ih6f4u" path="res://Art/Backgrounds/MuseumFront.png" id="3_s32px"]
+[ext_resource type="Texture2D" uid="uid://ca3ngnlxtd6fx" path="res://Art/Characters/ChonkyDuck/ChonkyDuckSurprised.png" id="4_rk18d"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="5_k2miy"]
+
+[sub_resource type="Resource" id="Resource_tjnxq"]
+script = ExtResource("2_hwiww")
+ActionName = "Go to Exhibit in the center"
+DialogueRef = ExtResource("1_0eagq")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[sub_resource type="Resource" id="Resource_d5mjf"]
+script = ExtResource("2_hwiww")
+ActionName = "Go to Electrical room, to the left of the exhibit"
+DialogueRef = ExtResource("3_hwiww")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("5_k2miy")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack Feathers breaks his way in and is in the front entrance."
+Background = ExtResource("3_s32px")
+ObjectOfInterest = ExtResource("4_rk18d")
+Action1 = SubResource("Resource_tjnxq")
+Action2 = SubResource("Resource_d5mjf")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

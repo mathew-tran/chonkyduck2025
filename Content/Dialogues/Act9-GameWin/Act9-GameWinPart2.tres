@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://byv7tdilggi5m"]
+
+[ext_resource type="Resource" uid="uid://b4vfbgfhi45lx" path="res://Content/Dialogues/Act9-GameWin/Act9-GameWinPart3.tres" id="1_j4vsc"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_qiuwc"]
+[ext_resource type="Texture2D" uid="uid://hymq22ei4ddl" path="res://Art/Backgrounds/HouseInMorning.png" id="3_xy6lg"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_mww5g"]
+
+[sub_resource type="Resource" id="Resource_ncfb4"]
+script = ExtResource("1_qiuwc")
+ActionName = "Read newspaper"
+DialogueRef = ExtResource("1_j4vsc")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_mww5g")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "The Next Day
+Jack Feathers notices newspaper in the mailbox."
+Background = ExtResource("3_xy6lg")
+Action1 = SubResource("Resource_ncfb4")
+bAnimate = true
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

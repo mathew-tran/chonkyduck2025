@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://cxf2r167apjmt"]
+
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_1p2ew"]
+[ext_resource type="Resource" uid="uid://5kcco3uqihwd" path="res://Content/Dialogues/Act2/Act2Part1DialoguePart1fromHallway.tres" id="1_x4unq"]
+[ext_resource type="Texture2D" uid="uid://bubelft3ywu6f" path="res://Art/Backgrounds/MuseumHallway.png" id="2_kd1ak"]
+[ext_resource type="Texture2D" uid="uid://48aa37a2ygqm" path="res://Art/Items/PasscodeAnswer.png" id="3_kd1ak"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_x4unq"]
+
+[sub_resource type="Resource" id="Resource_voo0d"]
+script = ExtResource("1_1p2ew")
+ActionName = "Walk back to the main entrance."
+DialogueRef = ExtResource("1_x4unq")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_x4unq")
+bIsPlayer = true
+EmoteState = 0
+DialogueToSay = "The note reads \"5522\"
+I wonder what this is for?"
+Background = ExtResource("2_kd1ak")
+ObjectOfInterest = ExtResource("3_kd1ak")
+Action1 = SubResource("Resource_voo0d")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

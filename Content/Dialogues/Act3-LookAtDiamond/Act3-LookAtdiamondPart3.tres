@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://cxrapqf6tb2bj"]
+
+[ext_resource type="Resource" uid="uid://cevgmsvfogdju" path="res://Content/Dialogues/Act3-LookAtDiamond/Act3-LookAtdiamondPart4.tres" id="1_1giwh"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_ivbnd"]
+[ext_resource type="Texture2D" uid="uid://by57xktwgbwqj" path="res://Art/Backgrounds/MuseumElectricalRoom.png" id="3_lv7rc"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="4_lbtik"]
+
+[sub_resource type="Resource" id="Resource_po1ix"]
+script = ExtResource("1_ivbnd")
+ActionName = "Turn around"
+DialogueRef = ExtResource("1_1giwh")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("4_lbtik")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "Jack notices the door has a lock. 
+Someone places their hand on jacks shoulder"
+Background = ExtResource("3_lv7rc")
+Action1 = SubResource("Resource_po1ix")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

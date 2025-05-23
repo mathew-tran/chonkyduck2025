@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=6 format=3 uid="uid://cgrtwl486cady"]
+
+[ext_resource type="Resource" uid="uid://be66vxcpvj1fs" path="res://Content/Dialogues/Act8-Robbery/Act8-Robbery-Part1.tres" id="1_8eul4"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_d7teq"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="1_h5r8w"]
+[ext_resource type="Texture2D" uid="uid://cunkfsmqgno7b" path="res://Art/Backgrounds/HouseAtNight.png" id="2_8eul4"]
+
+[sub_resource type="Resource" id="Resource_php7j"]
+script = ExtResource("1_d7teq")
+ActionName = "Enact Robbery."
+DialogueRef = ExtResource("1_8eul4")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("1_h5r8w")
+bIsPlayer = false
+EmoteState = 0
+DialogueToSay = "It's late at night.
+Jack Feathers comes back to his place of residence.
+The plan is simple. He just needs to being in some tools,go to the museum tonight, use the passcode.
+Disable the power, and then take the Jewel!"
+Background = ExtResource("2_8eul4")
+Action1 = SubResource("Resource_php7j")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

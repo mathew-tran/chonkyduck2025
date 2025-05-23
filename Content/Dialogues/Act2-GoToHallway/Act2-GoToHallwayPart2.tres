@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=7 format=3 uid="uid://k01bw0fwyyyb"]
+
+[ext_resource type="Resource" uid="uid://b874fqke1yxrq" path="res://Content/Dialogues/Act2-GoToHallway/Act2-GoToHallwayPart3.tres" id="1_83pyc"]
+[ext_resource type="Script" uid="uid://c7xkm80tcrsro" path="res://Content/ActionData.gd" id="1_h0lxw"]
+[ext_resource type="Texture2D" uid="uid://bubelft3ywu6f" path="res://Art/Backgrounds/MuseumHallway.png" id="2_cynwq"]
+[ext_resource type="Script" uid="uid://bqt4k86x2hw2v" path="res://Content/DialogueData.gd" id="3_83pyc"]
+[ext_resource type="Texture2D" uid="uid://bsn36g1trnhee" path="res://Art/Characters/TimSuspicious/TimSuspiciousSurprised.png" id="3_cynwq"]
+
+[sub_resource type="Resource" id="Resource_voo0d"]
+script = ExtResource("1_h0lxw")
+ActionName = "Talk to Stranger"
+DialogueRef = ExtResource("1_83pyc")
+metadata/_custom_type_script = "uid://c7xkm80tcrsro"
+
+[resource]
+script = ExtResource("3_83pyc")
+bIsPlayer = true
+EmoteState = 0
+DialogueToSay = "Hey, are you alright?"
+Background = ExtResource("2_cynwq")
+ObjectOfInterest = ExtResource("3_cynwq")
+Action1 = SubResource("Resource_voo0d")
+bAnimate = false
+metadata/_custom_type_script = "uid://bqt4k86x2hw2v"
