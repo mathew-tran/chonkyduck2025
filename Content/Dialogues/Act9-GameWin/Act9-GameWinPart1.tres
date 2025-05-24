@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("1_dkwi7")
+MusicToPlay = 0
 bIsPlayer = false
 EmoteState = 0
 DialogueToSay = "Jack Feathers goes home successfully with the diamond.

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://dtyod4f5m8xa8"
+path="res://.godot/imported/story time.ogg-acc83056c8e90096a5930cfd8523877c.oggvorbisstr"
+
+[deps]
+
+source_file="res://Audio/story time.ogg"
+dest_files=["res://.godot/imported/story time.ogg-acc83056c8e90096a5930cfd8523877c.oggvorbisstr"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

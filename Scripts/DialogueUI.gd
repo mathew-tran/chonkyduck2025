@@ -23,6 +23,7 @@ var InPosition = Vector2.ZERO
 @export var StartingDialogue : DialogueData
 func _enter_tree() -> void:
 	$CoverPanel.visible = true
+	
 func _ready() -> void:
 	InPosition = $CoverPanel.global_position
 	print(len($Label.text))
@@ -33,7 +34,7 @@ func _ready() -> void:
 	
 func AnimateOut():	
 	var tween = get_tree().create_tween()
-	tween.tween_property($CoverPanel, "global_position", InPosition + Vector2(0, $CoverPanel.get_size().y), 1.2)
+	tween.tween_property($CoverPanel, "global_position", InPosition + Vector2(0, $CoverPanel.get_size().y), .6)
 	await tween.finished
 	
 func AnimateIn():
@@ -60,8 +61,16 @@ func AnimateObjectOfInterest(bShow):
 		
 	await tween.finished
 	
+func PlayMusic(dialogue : DialogueData):
+	if $Music.stream == dialogue.GetMusic():
+		return
+	else:
+		$Music.stream = dialogue.GetMusic()
+		$Music.play()
+	
 func InjectDialogue(dialogue : DialogueData):
 	CurrentState = STATE.ANIMATING
+	PlayMusic(dialogue)
 	if dialogue.bAnimate:
 		await AnimateIn()
 	$ObjectOfInterest.texture = dialogue.ObjectOfInterest
@@ -132,6 +141,7 @@ func ShowNextText():
 	if CurrentState == STATE.DIALOGUE_COMPLETE:
 		return
 		
+	$ClickSFX.play()
 	if TextToShow.size() > 0:
 		$Label.visible_characters = 0
 		var tween = get_tree().create_tween()
@@ -142,6 +152,9 @@ func ShowNextText():
 		CurrentState = STATE.DIALOGUE_COMPLETE
 		PopulateActions()
 		
+func PlaySelectSFX():
+	$SelectSFX.play()
+	
 func PopulateActions():
 	ClearActions()
 	

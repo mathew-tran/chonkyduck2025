@@ -12,6 +12,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("3_ln3mk")
+MusicToPlay = 3
 bIsPlayer = false
 EmoteState = 0
 DialogueToSay = "The newspaper signals a job well done.

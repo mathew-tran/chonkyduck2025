@@ -2,6 +2,13 @@ extends Resource
 
 class_name DialogueData
 
+enum MUSIC {
+	NONE,
+	THINKING,
+	STEALING,
+	RELAXING
+}
+@export var MusicToPlay = MUSIC.THINKING
 @export var bIsPlayer = false
 @export var SpeakerRef : SpeakerData
 @export var EmoteState = SpeakerData.EMOTE_STATE.IDLE
@@ -16,6 +23,8 @@ class_name DialogueData
 @export var Action4 : ActionData
 
 @export var bAnimate = false
+
+
 
 func GetSpeakerRef():
 	if bIsPlayer:
@@ -35,3 +44,12 @@ func GetActions():
 		actions.append(Action4)
 	return actions
 	
+func GetMusic():
+	match MusicToPlay:
+		MUSIC.THINKING:
+			return load("res://Audio/espionage.ogg")
+		MUSIC.STEALING:
+			return load("res://Audio/loadingscreenloop.wav")
+		MUSIC.RELAXING:
+			return load("res://Audio/story time.ogg")
+	return null

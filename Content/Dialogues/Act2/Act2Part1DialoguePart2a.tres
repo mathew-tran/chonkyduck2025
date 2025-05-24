@@ -14,6 +14,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("4_7okyh")
+MusicToPlay = 3
 bIsPlayer = false
 SpeakerRef = ExtResource("3_vp1e2")
 EmoteState = 0

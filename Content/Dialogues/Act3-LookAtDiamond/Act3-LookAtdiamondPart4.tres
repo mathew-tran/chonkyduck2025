@@ -18,7 +18,7 @@ bIsPlayer = false
 SpeakerRef = ExtResource("4_mbgpv")
 EmoteState = 1
 DialogueToSay = "Hey you, what you looking at?
-There's no drinks around here, and it's boring electrical stuff here.
+There's nothing to look at around here, it's just boring electrical stuff.
 ..
 ..
 Just joking!

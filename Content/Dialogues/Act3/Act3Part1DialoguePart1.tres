@@ -20,6 +20,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("1_4kkto")
+MusicToPlay = 2
 bIsPlayer = false
 EmoteState = 0
 DialogueToSay = "Jack Feathers enters the exhibit and sees the diamond across from him.

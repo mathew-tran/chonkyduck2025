@@ -8,7 +8,7 @@
 
 [sub_resource type="Resource" id="Resource_voo0d"]
 script = ExtResource("1_h0lxw")
-ActionName = "Talk to Stranger"
+ActionName = "Look at him."
 DialogueRef = ExtResource("1_83pyc")
 metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 

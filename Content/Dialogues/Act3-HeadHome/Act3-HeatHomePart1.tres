@@ -13,6 +13,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("1_h5r8w")
+MusicToPlay = 0
 bIsPlayer = false
 EmoteState = 0
 DialogueToSay = "It's late at night.
@@ -21,5 +22,5 @@ The plan is simple. He just needs to being in some tools,go to the museum tonigh
 Disable the power, and then take the Jewel!"
 Background = ExtResource("2_8eul4")
 Action1 = SubResource("Resource_php7j")
-bAnimate = false
+bAnimate = true
 metadata/_custom_type_script = "uid://bqt4k86x2hw2v"

@@ -21,6 +21,7 @@ metadata/_custom_type_script = "uid://c7xkm80tcrsro"
 
 [resource]
 script = ExtResource("5_k2miy")
+MusicToPlay = 2
 bIsPlayer = false
 EmoteState = 0
 DialogueToSay = "Jack Feathers breaks his way in and is in the front entrance."
