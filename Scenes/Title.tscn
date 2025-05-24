@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://c15cr21d0d72x"]
+
+[ext_resource type="Texture2D" uid="uid://doyng01gtp6km" path="res://Art/Backgrounds/Title.png" id="1_tochr"]
+[ext_resource type="AudioStream" uid="uid://dtyod4f5m8xa8" path="res://Audio/story time.ogg" id="2_phf2g"]
+[ext_resource type="PackedScene" uid="uid://dseuwrgcv1x0p" path="res://Prefabs/StartButton.tscn" id="3_6khh7"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6khh7"]
+bg_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 20.0
+
+[node name="Node2D" type="Node2D"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_tochr")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_phf2g")
+autoplay = true
+
+[node name="TextureButton" parent="." instance=ExtResource("3_6khh7")]
+offset_left = -202.0
+offset_top = 326.0
+offset_right = 998.0
+offset_bottom = 466.0
+scale = Vector2(0.6, 0.6)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 34.0
+offset_top = 497.0
+offset_right = 666.0
+offset_bottom = 1040.0
+theme_override_styles/normal = SubResource("StyleBoxFlat_6khh7")
+text = "Game Design / Art / Programming:
+Mathew Tran
+
+Music:
+Loading Screen Loop.
+By Brandon Morris
+https://opengameart.org/content/loading-screen-loop
+
+Espionage
+By brandon75689
+https://opengameart.org/content/espionage
+
+Story Time
+By Augmentality
+https://opengameart.org/content/story-time
+
+SFX:
+51 UI sound effects (buttons, switches and clicks)
+By Kenney.nl
+https://opengameart.org/content/51-ui-sound-effects-buttons-switches-and-clicks
+"

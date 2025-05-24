@@ -6,17 +6,23 @@ var ActionRef : ActionData
 
 signal CompleteAnim
 
+@export var bStartDisabled = true
 func _ready() -> void:
-	$AnimationPlayer.play("anim")
-	disabled = true
+
+	
+	if bStartDisabled:
+		disabled = true
+		$AnimationPlayer.play("anim")
 
 func Setup(actionRef : ActionData):
 	ActionRef = actionRef
 	$Label.text = actionRef.ActionName
 	
 func _on_button_up() -> void:
-	if $Label.text == "Restart Game":
-		get_tree().reload_current_scene()
+	if $Label.text == "Play":
+		get_tree().change_scene_to_file("res://Scenes/Main.tscn")
+	elif $Label.text == "Restart Game":
+		get_tree().change_scene_to_file("res://Scenes/Title.tscn")
 	else:
 		Finder.GetDialogueUI().InjectDialogue(ActionRef.DialogueRef)
 		Finder.GetDialogueUI().PlaySelectSFX()

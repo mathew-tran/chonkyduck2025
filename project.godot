@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ChonkyDuck"
-run/main_scene="uid://cnj6s1cks3ql0"
+run/main_scene="uid://c15cr21d0d72x"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
